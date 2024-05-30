@@ -8,6 +8,12 @@ export const content = [
   "./error.vue",
 ];
 export const theme = {
-  extend: {},
+  extend: {
+    colors : {
+      primary: '#f7d3df',
+      logo_text: '#edb9c0',
+      text_default: '#575656'
+    },
+  },
 };
 export const plugins = [];

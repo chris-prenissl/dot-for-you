@@ -1,7 +1,11 @@
-<!-- pages/index.vue -->
 <template>
   <div>
     <Navbar />
+    <Portfolio />
+    <Portfolio />
+    <Portfolio />
+    <Portfolio />
+    <Portfolio />
   </div>
 </template>
 

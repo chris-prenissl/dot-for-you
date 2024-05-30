@@ -1,14 +1,31 @@
 <template>
-  <nav class="bg-gray-800 p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <div class="text-white text-2xl">DotForYou</div>
-      <div class="space-x-4">
-        <a href="#" class="text-gray-300 hover:text-white">Handmade</a>
-        <a href="#" class="text-gray-300 hover:text-white">Werke</a>
-        <a href="#" class="text-gray-300 hover:text-white">Shop</a>
-        <a href="#" class="text-gray-300 hover:text-white">About</a>
-        <a href="#" class="text-gray-300 hover:text-white">Kontakt</a>
+  <header class="bg-primary sticky top-0 z-50 mb-2 px-4 shadow">
+    <div class="relative mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between">
+      <div class="h-8 md:h-24 max-w-full">
+        <img class="h-full object-contain" src="assets/logo.svg" alt=""/>
       </div>
+      <input class="peer hidden" type="checkbox" id="navbar-open"/>
+      <label class="absolute right-0 mt-1 cursor-pointer text-xl sm:hidden" for="navbar-open">
+        <span class="sr-only">Toggle Navigation</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet"
+             viewBox="0 0 448 512">
+          <path fill="currentColor"
+                d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z"/>
+        </svg>
+      </label>
+      <nav aria-label="Header Navigation" class="peer-checked:block hidden pl-2 py-6 sm:block sm:py-0">
+        <ul class="flex text-center flex-col gap-y-4 sm:flex-row sm:gap-x-8">
+          <li class=""><a class="text-text_default hover:text-rose-400" href="#">Handmade</a></li>
+          <li class=""><a class="text-text_default hover:text-rose-400" href="#">Werke</a></li>
+          <li class="mt-2 sm:mt-0"><a
+              class="rounded-xl border-2 border-primary px-6 py-2 font-medium text-text_default hover:text-rose-400"
+              href="#">Shop</a></li>
+          <li class=""><a class="text-text_default hover:text-rose-400" href="#">About</a></li>
+          <li class=""><a class="text-text_default hover:text-rose-400" href="#">Kontakt</a></li>
+        </ul>
+      </nav>
     </div>
-  </nav>
+  </header>
 </template>
+<script setup lang="ts">
+</script>
