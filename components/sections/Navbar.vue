@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-primary sticky top-0 z-50 mb-2 px-4 shadow">
+  <header class="navbar bg-primary sticky top-0 z-50 mb-2 px-4 shadow">
     <div class="relative mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between">
       <div class="h-8 md:h-24 max-w-full">
         <img class="h-full object-contain" src="assets/logo.svg" alt=""/>
@@ -15,17 +15,19 @@
       </label>
       <nav aria-label="Header Navigation" class="peer-checked:block hidden pl-2 py-6 sm:block sm:py-0">
         <ul class="flex text-center flex-col gap-y-4 sm:flex-row sm:gap-x-8">
-          <li class=""><a class="text-text_default hover:text-rose-400" href="#">Handmade</a></li>
-          <li class=""><a class="text-text_default hover:text-rose-400" href="#">Werke</a></li>
-          <li class="mt-2 sm:mt-0"><a
-              class="rounded-xl border-2 border-primary px-6 py-2 font-medium text-text_default hover:text-rose-400"
-              href="#">Shop</a></li>
-          <li class=""><a class="text-text_default hover:text-rose-400" href="#">About</a></li>
-          <li class=""><a class="text-text_default hover:text-rose-400" href="#">Kontakt</a></li>
+          <li class=""><a class="text-text_default hover:text-logo_text" href="#">Handmade</a></li>
+          <li class=""><a class="text-text_default hover:text-logo_text" href="#">Gallerie</a></li>
+          <li class=""><a class="text-primary hover:text-amber-400" href="#">Shop</a></li>
+          <li class=""><a class="text-text_default hover:text-logo_text" href="#">About</a></li>
+          <li class=""><a class="text-text_default hover:text-logo_text" href="#">Kontakt</a></li>
         </ul>
       </nav>
     </div>
   </header>
 </template>
-<script setup lang="ts">
-</script>
+
+<style>
+.navbar {
+  background: radial-gradient(circle, #f9f9f9 70%, #f7d3df);
+}
+</style>
