@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <Navbar />
-    <Portfolio />
-    <Portfolio />
-    <Portfolio />
-    <Portfolio />
-    <Portfolio />
-  </div>
+  <Navbar/>
+  <Portfolio/>
+  <Portfolio/>
+  <Portfolio/>
+  <Portfolio/>
+  <Portfolio/>
 </template>
 
 <script>
