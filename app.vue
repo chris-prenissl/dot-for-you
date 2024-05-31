@@ -1,6 +1,6 @@
 <template>
   <Navbar/>
-  <Portfolio/>
+  <Hero/>
   <Portfolio/>
   <Portfolio/>
   <Portfolio/>

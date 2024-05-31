@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar bg-primary sticky top-0 z-50 px-8 shadow">
+  <header class="nav_background bg-primary sticky top-0 z-50 px-8 shadow">
     <div class="relative mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between">
       <div class="h-16 md:h-24 max-w-full">
         <img class="h-full object-contain" src="assets/logo.svg" alt=""/>
@@ -15,19 +15,27 @@
       </label>
       <nav aria-label="Header Navigation" class="peer-checked:block hidden pl-2 py-6 sm:block sm:py-0">
         <ul class="flex text-center flex-col gap-y-4 sm:flex-row sm:gap-x-8">
-          <li class=""><a class="text-text_default hover:text-logo_text" href="#">Handmade</a></li>
-          <li class=""><a class="text-text_default hover:text-logo_text" href="#">Gallerie</a></li>
-          <li class=""><a class="text-primary hover:text-amber-400" href="#">Shop</a></li>
-          <li class=""><a class="text-text_default hover:text-logo_text" href="#">About</a></li>
-          <li class=""><a class="text-text_default hover:text-logo_text" href="#">Kontakt</a></li>
+          <li>
+            <NavItem href="#" text="Handmade"/>
+          </li>
+          <li>
+            <NavItem href="#" text="Gallerie"/>
+          </li>
+          <li>
+            <NavItemSpecial href="#" text="Shop"/>
+          </li>
+          <li>
+            <NavItem href="#" text="About"/>
+          </li>
+          <li>
+            <NavItem href="#" text="Kontakt"/>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
 </template>
-
-<style>
-.navbar {
-  background: radial-gradient(circle, #f9f9f9 70%, #f7d3df);
-}
-</style>
+<script setup lang="ts">
+import NavItem from "~/components/elements/NavItem.vue";
+import NavItemSpecial from "~/components/elements/NavItemSpecial.vue";
+</script>

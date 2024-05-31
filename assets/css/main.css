@@ -6,4 +6,7 @@
     .h-1\/12 {
         height: 10vh;
     }
+    .nav_background {
+        background: radial-gradient(circle, #f9f9f9 70%, #f7d3df);
+    }
 }
