@@ -16,26 +16,22 @@
       <nav aria-label="Header Navigation" class="peer-checked:block hidden pl-2 py-6 sm:block sm:py-0">
         <ul class="flex text-center flex-col gap-y-4 sm:flex-row sm:gap-x-8">
           <li>
-            <NavItem href="#" text="Handmade"/>
+            <a class="text-text_default hover:text-logo_text" href="#">Handmade</a>
           </li>
           <li>
-            <NavItem href="#" text="Gallerie"/>
+            <a class="text-text_default hover:text-logo_text" href="#">Gallerie</a>
           </li>
           <li>
-            <NavItemSpecial href="#" text="Shop"/>
+            <a class="text-logo_text hover:text-amber-400" href="#">Shop</a>
           </li>
           <li>
-            <NavItem href="#" text="About"/>
+            <a class="text-text_default hover:text-logo_text" href="#">About Me</a>
           </li>
           <li>
-            <NavItem href="#" text="Kontakt"/>
+            <a class="text-text_default hover:text-logo_text" href="#">Kontakt</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
 </template>
-<script setup lang="ts">
-import NavItem from "~/components/elements/NavItem.vue";
-import NavItemSpecial from "~/components/elements/NavItemSpecial.vue";
-</script>
