@@ -1,10 +1,11 @@
 <template>
-  <Navbar/>
-  <Hero/>
-  <Portfolio/>
-  <Portfolio/>
-  <Portfolio/>
-  <Portfolio/>
+  <div class="text-text_default">
+    <Navbar/>
+    <Hero/>
+    <Portfolio/>
+    <Contact/>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -14,17 +15,19 @@ import CreatorStory from '~/components/sections/CreatorStory.vue'
 import Portfolio from "~/components/sections/Portfolio.vue"
 import Shop from '~/components/sections/Shop.vue'
 import About from '~/components/sections/About.vue'
-import Footer from '~/components/sections/Footer.vue'
+import Contact from "~/components/sections/Contact.vue";
+import Footer from "~/components/sections/Footer.vue";
 
 export default {
   components: {
+    Footer,
+    Contact,
     Navbar,
     Hero,
     CreatorStory,
     Portfolio,
     Shop,
-    About,
-    Footer
+    About
   }
 }
 </script>

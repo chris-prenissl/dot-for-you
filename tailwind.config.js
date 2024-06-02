@@ -4,7 +4,7 @@ export const content = [
   "./layouts/**/*.vue",
   "./pages/**/*.vue",
   "./plugins/**/*.{js,ts}",
-  "./app.vue",
+  "./index.vue",
   "./error.vue",
 ];
 export const theme = {
@@ -12,7 +12,8 @@ export const theme = {
     colors : {
       primary: '#f7d3df',
       logo_text: '#edb9c0',
-      text_default: '#575656'
+      text_default: '#575656',
+      text_on_primary: '#333333'
     },
   },
 };
