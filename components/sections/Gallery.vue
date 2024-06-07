@@ -1,47 +1,48 @@
 <template>
-  <Swiper
-      :modules="[SwiperAutoplay, SwiperEffectCreative]"
-      :width="500"
-      :height="500"
-      :slides-per-view="1"
-      :centered-slides="true"
-      :centered-slides-bounds="true"
-      :loop="true"
-      :watch-overflow="false"
-      :effect="'creative'"
-      :autoplay="{
-      delay: 8000,
-      disableOnInteraction: true,
-    }"
-      :creative-effect="{
-      prev: {
-        shadow: false,
-        translate: ['-20%', 0, -1],
-      },
-      next: {
-        translate: ['100%', 0, 0],
-      },
-    }"
-  >
-    <SwiperSlide
-        v-for="(image, index) in images"
-        :key="index">
-        <img :src="image.url" :alt="image.alt" class="object-cover overflow-clip" style="width: 500px; height: 500px;">
-    </SwiperSlide>
-  </Swiper>
+  <div class="flex justify-center items-center h-dvh">
+    <div class="w-1/2 content-center flex justify-center">
+      <Swiper
+          :modules="[SwiperAutoplay, SwiperEffectCoverflow, SwiperPagination]"
+          :centered-slides="true"
+          :centered-slides-bounds="true"
+          :effect="'coverflow'"
+          :slides-per-view="1"
+          :loop="true"
+          :coverflow-effect="{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false
+          }"
+          :pagination="true"
+      >
+        <SwiperSlide
+            v-for="(image, index) in images"
+            :key="index">
+          <div class="flex justify-center items-center">
+            <img :src="image.url" :alt="image.alt" />
+          </div>
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  </div>
 </template>
 
 <script>
+const imageUrls = [
+  '/gallery_images/gallery_3.jpg',
+  '/gallery_images/gallery_1.jpg',
+  '/gallery_images/gallery_3.jpg',
+  '/gallery_images/gallery_3.jpg'
+];
 export default {
   data() {
     return {
-      images: [
-        {url: 'gallery_images/gallery_1.jpg'},
-        {url: 'gallery_images/gallery_2.jpg'},
-        {url: 'gallery_images/gallery_3.jpg'},
-        {url: 'gallery_images/gallery_4.jpg'},
-        {url: 'gallery_images/gallery_5.jpg'},
-      ],
+      images: imageUrls.map((image, index) => ({
+        url: image,
+        alt: `Image ${index + 1}`
+      }))
     };
   },
 };
