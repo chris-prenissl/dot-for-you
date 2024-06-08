@@ -1,6 +1,6 @@
 <template>
   <section
-      class="relative flex flex-col items-center md:items-start justify-center h-dvh bg-cover bg-center"
+      class="relative flex flex-col items-center md:items-start justify-center h-vh bg-cover bg-center"
       style="background-image: url('/gallery_images/gallery_3.jpg')">
     <div class="block px-4 md:px-32 box-border">
       <div class="block text-left max-w-full p-8 w-96 backdrop-blur-sm rounded-xl">

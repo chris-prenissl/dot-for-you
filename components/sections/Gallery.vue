@@ -1,6 +1,6 @@
 <template>
-  <div class="flex justify-center items-center h-dvh">
-    <div class="w-1/2 content-center flex justify-center">
+  <div class="flex items-center justify-center align-middle">
+    <div class="px-8 py-8 max-h-dvh max-w-lg">
       <Swiper
           :modules="[SwiperAutoplay, SwiperEffectCoverflow, SwiperPagination]"
           :centered-slides="true"
@@ -15,13 +15,16 @@
             modifier: 1,
             slideShadows: false
           }"
-          :pagination="true"
+          :pagination="{
+            clickable: true,
+
+          }"
       >
         <SwiperSlide
             v-for="(image, index) in images"
             :key="index">
           <div class="flex justify-center items-center">
-            <img :src="image.url" :alt="image.alt" />
+            <img :src="image.url" :alt="image.alt" style="height: 400px;"/>
           </div>
         </SwiperSlide>
       </Swiper>
@@ -31,10 +34,11 @@
 
 <script>
 const imageUrls = [
-  '/gallery_images/gallery_3.jpg',
   '/gallery_images/gallery_1.jpg',
+  '/gallery_images/gallery_2.jpg',
   '/gallery_images/gallery_3.jpg',
-  '/gallery_images/gallery_3.jpg'
+  '/gallery_images/gallery_4.jpg',
+  '/gallery_images/gallery_5.jpg'
 ];
 export default {
   data() {
@@ -47,3 +51,14 @@ export default {
   },
 };
 </script>
+
+<style>
+.swiper-pagination-bullet {
+  background: #f7d3df !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 30px !important;
+  border-radius: 10px;
+}
+</style>
