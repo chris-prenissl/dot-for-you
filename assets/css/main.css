@@ -9,4 +9,7 @@
     .nav_background {
         background: radial-gradient(circle, #f9f9f9 70%, #f7d3df);
     }
+    .h-vh {
+        height: 100vh;
+    }
 }
