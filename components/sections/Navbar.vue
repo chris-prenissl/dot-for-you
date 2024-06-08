@@ -5,7 +5,7 @@
         <img class="h-full object-contain" src="assets/logo.svg" alt=""/>
       </div>
       <input class="peer hidden" type="checkbox" id="navbar-open"/>
-      <label class="absolute top-1/3 right-0 mt-1 cursor-pointer text-xl sm:hidden" for="navbar-open">
+      <label class="absolute right-0 mt-4 cursor-pointer text-xl sm:hidden" for="navbar-open">
         <span class="sr-only">Toggle Navigation</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet"
              viewBox="0 0 448 512">
