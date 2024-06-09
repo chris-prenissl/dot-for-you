@@ -1,8 +1,8 @@
 <template>
-  <div class="flex items-center justify-center align-middle">
-    <div class="px-8 py-8 max-h-dvh max-w-lg">
+  <div class="flex items-center justify-center">
+    <div class="p-8 max-h-dvh max-w-lg">
       <Swiper
-          :modules="[SwiperAutoplay, SwiperEffectCoverflow, SwiperPagination]"
+          :modules="[SwiperAutoplay, SwiperEffectCoverflow, SwiperPagination, SwiperNavigation]"
           :centered-slides="true"
           :centered-slides-bounds="true"
           :effect="'coverflow'"
@@ -17,15 +17,15 @@
           }"
           :pagination="{
             clickable: true,
-
+          }"
+          :navigation="{
+            enabled: true
           }"
       >
         <SwiperSlide
             v-for="(image, index) in images"
             :key="index">
-          <div class="flex justify-center items-center">
-            <img :src="image.url" :alt="image.alt" style="height: 400px;"/>
-          </div>
+            <img class="object-cover content-center" :src="image.url" :alt="image.alt"/>
         </SwiperSlide>
       </Swiper>
     </div>
@@ -60,5 +60,13 @@ export default {
 .swiper-pagination-bullet-active {
   width: 30px !important;
   border-radius: 10px;
+}
+
+.swiper-button-prev {
+  color: #f9f9f9;
+}
+
+.swiper-button-next {
+  color: #f9f9f9;
 }
 </style>
