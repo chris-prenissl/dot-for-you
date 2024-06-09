@@ -54,7 +54,7 @@ export default {
 
 <style>
 .swiper-pagination-bullet {
-  background: #f7d3df !important;
+  background: #f9f9f9 !important;
 }
 
 .swiper-pagination-bullet-active {
