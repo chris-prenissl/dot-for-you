@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-primary text-white p-8">
-    <div class="container mx-auto text-center">
+    <div class="container mx-auto text-center" data-aos="fade-up">
       <h3 class="text-2xl mb-4">Folge mir für weitere Ideen</h3>
       <div class="flex justify-center space-x-4 mb-4">
         <a href="#" class="bg-green-500 p-2 rounded-full">WhatsApp</a>
