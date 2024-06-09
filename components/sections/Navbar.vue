@@ -1,7 +1,7 @@
 <template>
-  <header class="nav_background bg-primary fixed top-0 z-50 px-8 w-dvw shadow">
+  <header class="nav_background bg-primary fixed top-0 z-50 px-8 w-svw shadow">
     <div class="relative mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between">
-      <div class="h-16 md:h-24 max-w-full">
+      <div class="logo h-12 md:h-24">
         <img class="h-full object-contain" src="assets/logo.svg" alt=""/>
       </div>
       <input class="peer hidden" type="checkbox" id="navbar-open"/>
