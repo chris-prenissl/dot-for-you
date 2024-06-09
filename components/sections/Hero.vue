@@ -11,8 +11,8 @@
           Wünschen.
         </p>
         <div class="flex flex-wrap justify-center sm:justify-start gap-8">
-          <a href="/" class="bg-primary p-6 border-pink-400 border-2 rounded-xl text-xl text-center">Zum Shop</a>
-          <a href="/" class="bg-base p-6 border-pink-400 border-2 rounded-xl text-xl text-center">Kontakt</a>
+          <a href="/" class="bg-primary p-6 border-pink-400 border-2 rounded-xl text-xl text-center hover:bg-base hover:border-base hover:text-primary">Zum Shop</a>
+          <a href="/" class="bg-base p-6 border-pink-400 border-2 rounded-xl text-xl text-center hover:border-base hover:text-primary">Kontakt</a>
         </div>
       </div>
     </div>
