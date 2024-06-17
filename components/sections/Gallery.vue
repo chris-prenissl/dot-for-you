@@ -1,20 +1,12 @@
 <template>
-  <div class="flex items-center justify-center">
-    <div class="p-8 max-h-dvh max-w-lg">
+  <section class="h-lvh">
+    <div class="p-16">
       <Swiper
-          :modules="[SwiperAutoplay, SwiperEffectCoverflow, SwiperPagination, SwiperNavigation]"
+          :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
           :centered-slides="true"
           :centered-slides-bounds="true"
-          :effect="'coverflow'"
           :slides-per-view="1"
           :loop="true"
-          :coverflow-effect="{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: false
-          }"
           :pagination="{
             clickable: true,
           }"
@@ -25,11 +17,17 @@
         <SwiperSlide
             v-for="(image, index) in images"
             :key="index">
+          <div class="grid grid-cols-2 justify-items-center gap-4">
             <img class="object-cover content-center" :src="image.url" :alt="image.alt"/>
+            <div class="flex flex-col gap-4">
+              <h1 class="text-4xl">Muttertag</h1>
+              <p>Beschreibung was es alles zu Muttertag gibt</p>
+            </div>
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -54,7 +52,7 @@ export default {
 
 <style>
 .swiper-pagination-bullet {
-  background: #f9f9f9 !important;
+  background: #f7d3df !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -63,10 +61,10 @@ export default {
 }
 
 .swiper-button-prev {
-  color: #f9f9f9;
+  color: #f7d3df;
 }
 
 .swiper-button-next {
-  color: #f9f9f9;
+  color: #f7d3df;
 }
 </style>

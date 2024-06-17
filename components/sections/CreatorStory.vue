@@ -1,13 +1,26 @@
 <template>
-  <section class="bg-gray-200 p-8">
-    <div class="container mx-auto">
-      <div class="grid grid-cols-2 gap-4 mb-8">
-        <div class="bg-red-700 text-white p-4 flex justify-center items-center">Für deinen Anlass</div>
-        <div class="bg-red-700 text-white p-4 flex justify-center items-center">Handmade</div>
+  <section class="h-lvh">
+    <div class="h-full flex flex-shrink flex-grow flex-col justify-center items-center">
+      <div class="flex">
+        <img class="object-cover content-center" alt="Anlass" src="/public/gallery_images/gallery_1.jpg"/>
+        <div>
+          <h1>Für deinen Anlass</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
       </div>
-      <div class="grid grid-cols-2 gap-4">
-        <div class="bg-red-700 text-white p-4 flex justify-center items-center">Schenken</div>
-        <div class="bg-red-700 text-white p-4 flex justify-center items-center">Muttertag</div>
+      <div class="flex">
+        <img class="object-cover content-center" alt="Handmade" src="/public/gallery_images/gallery_2.jpg"/>
+        <div>
+          <h1>Handmade</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="flex">
+        <img class="object-cover content-center" alt="Schenken" src="/public/gallery_images/gallery_3.jpg"/>
+        <div>
+          <h1>Schenken</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
       </div>
     </div>
   </section>

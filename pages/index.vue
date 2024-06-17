@@ -2,7 +2,10 @@
   <div class="text-text_default">
     <Navbar/>
     <Hero/>
+    <CreatorStory/>
     <Gallery/>
+    <Shop/>
+    <About/>
     <Contact/>
     <Footer/>
   </div>
@@ -16,9 +19,11 @@ import About from '~/components/sections/About.vue'
 import Contact from "~/components/sections/Contact.vue";
 import Footer from "~/components/sections/Footer.vue";
 import Gallery from "~/components/sections/Gallery.vue";
+import CreatorStory from "~/components/sections/CreatorStory.vue";
 
 export default {
   components: {
+    CreatorStory,
     Gallery,
     Footer,
     Contact,
