@@ -18,13 +18,7 @@
         <SwiperSlide
             v-for="(image, index) in images"
             :key="index">
-          <div class="grid grid-rows-2 md:grid-cols-2 md:grid-rows-1 justify-items-center gap-4 p-16">
-            <img class="object-cover content-center" :src="image.url" :alt="image.alt"/>
-            <div class="flex flex-col gap-4">
-              <h1 class="text-4xl">Muttertag</h1>
-              <p>Beschreibung was es alles zu Muttertag gibt</p>
-            </div>
-          </div>
+          <GallerySlideItem :title="image.title" :img-url="image.url" :description="image.description"/>
         </SwiperSlide>
       </Swiper>
     </div>
@@ -32,6 +26,19 @@
 </template>
 
 <script>
+import StoryItem from "~/components/elements/StoryItem.vue";
+import GallerySlideItem from "~/components/elements/GallerySlideItem.vue";
+
+const titles = [
+    'Muttertag',
+    'Vatertag',
+    'Taufe',
+    'Hochzeit',
+    'Weihnachten'
+];
+const descriptions = [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus sapien vel dolor feugiat, non posuere ipsum facilisis. Morbi consectetur elementum mi ac semper. In et fermentum sem, at.'
+];
 const imageUrls = [
   '/gallery_images/gallery_1.jpg',
   '/gallery_images/gallery_2.jpg',
@@ -40,11 +47,13 @@ const imageUrls = [
   '/gallery_images/gallery_5.jpg'
 ];
 export default {
+  components: {GallerySlideItem, StoryItem},
   data() {
     return {
       images: imageUrls.map((image, index) => ({
+        title: titles[index],
         url: image,
-        alt: `Image ${index + 1}`
+        description: descriptions[0]
       }))
     };
   },
