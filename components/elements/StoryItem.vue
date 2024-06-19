@@ -13,9 +13,9 @@ defineProps({
 </script>
 
 <template>
-  <div class="max-h-60vh flex flex-col md:grid md:grid-cols-2"
+  <div class="flex flex-col md:grid md:grid-cols-2"
        :data-aos="gridOrder === 1 ? 'fade-right' : 'fade-left'">
-    <img v-if="gridOrder !== 1" class="object-cover content-center"
+    <img v-if="gridOrder !== 1" class="max-h-60vh object-cover content-center"
          :src="srcPath"
          :alt="title"
     />
@@ -23,7 +23,7 @@ defineProps({
       <h1 class="text-4xl py-4">{{ title }}</h1>
       <p>{{ description }}</p>
     </div>
-    <img v-if="gridOrder === 1" class="object-cover content-center order-first md:order-1"
+    <img v-if="gridOrder === 1" class="max-h-60vh object-cover content-center order-first md:order-1"
          :src="srcPath"
          :alt="title"
     />
