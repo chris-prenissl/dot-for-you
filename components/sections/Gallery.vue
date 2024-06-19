@@ -1,6 +1,7 @@
 <template>
-  <section id="gallery" class="h-lvh">
-    <div class="p-16">
+  <section id="gallery" class="max-h-lvh sm:py-40 flex flex-col justify-center items-center gap-2 sm:gap-8">
+    <h1 class="text-4xl">Gallerie</h1>
+    <div class="w-lvw p-2 sm:p-8">
       <Swiper
           :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
           :centered-slides="true"
@@ -17,7 +18,7 @@
         <SwiperSlide
             v-for="(image, index) in images"
             :key="index">
-          <div class="grid grid-cols-2 justify-items-center gap-4">
+          <div class="grid grid-rows-2 md:grid-cols-2 md:grid-rows-1 justify-items-center gap-4 p-16">
             <img class="object-cover content-center" :src="image.url" :alt="image.alt"/>
             <div class="flex flex-col gap-4">
               <h1 class="text-4xl">Muttertag</h1>
