@@ -1,5 +1,5 @@
 <template>
-  <section class="h-lvh">
+  <section id="gallery" class="h-lvh">
     <div class="p-16">
       <Swiper
           :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"

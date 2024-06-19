@@ -1,5 +1,5 @@
 <template>
-  <section class="h-lvh">
+  <section id="shop" class="h-lvh">
     <div class="flex flex-col items-center justify-center gap-8">
       <h1 class="text-4xl">Shop</h1>
       <img class="object-cover content-center" src="/public/gallery_images/gallery_1.jpg" alt="Shop">
