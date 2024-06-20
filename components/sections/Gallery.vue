@@ -1,7 +1,7 @@
 <template>
-  <section id="gallery" class="max-h-lvh sm:py-40 flex flex-col justify-center items-center gap-2 sm:gap-8">
-    <h1 class="text-4xl">Gallerie</h1>
-    <div class="w-lvw p-2 sm:p-8">
+  <section id="gallery" class="p-8 flex flex-col justify-center items-center gap-2 sm:gap-4 gallery-radial-gradiant shadow-xl">
+    <h1 class="text-4xl font-bold">Gallerie</h1>
+    <div class="w-lvw p-2 sm:p-8" data-aos="fade-right">
       <Swiper
           :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
           :centered-slides="true"
@@ -62,7 +62,7 @@ export default {
 
 <style>
 .swiper-pagination-bullet {
-  background: #f7d3df !important;
+  background: grey !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -71,10 +71,13 @@ export default {
 }
 
 .swiper-button-prev {
-  color: #f7d3df;
+  color: grey;
 }
 
 .swiper-button-next {
-  color: #f7d3df;
+  color: grey;
+}
+.gallery-radial-gradiant {
+  background: radial-gradient(circle,#f7d3df 10%, #f9f9f9);
 }
 </style>
