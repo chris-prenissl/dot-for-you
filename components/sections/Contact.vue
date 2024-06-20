@@ -1,6 +1,6 @@
 <template>
-  <section id="contact" class="h-lvh bg-primary text-white px-8 py-40">
-    <h1 class="text-4xl text-center">Kontakt</h1>
+  <section id="contact" class="m-auto min-h-50lvh flex flex-col justify-between align-middle bg-primary text-base p-20">
+    <h1 class="text-4xl text-center font-bold">Kontakt</h1>
     <div class="text-center flex flex-col items-center justify-center gap-4 h-full">
       <h3 class="text-2xl mb-4">Folge mir für weitere Ideen</h3>
       <div class="flex justify-center space-x-4 mb-4">
