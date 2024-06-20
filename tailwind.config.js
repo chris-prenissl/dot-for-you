@@ -16,6 +16,9 @@ export const theme = {
       text_default: '#575656',
       text_on_primary: '#333333'
     },
+    fontFamily : {
+      sans: ['Quicksand', 'sans-serif'],
+    }
   },
 };
 export const plugins = [];
