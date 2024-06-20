@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {string[]} */
 export const content = [
   "./components/**/*.{js,vue,ts}",
   "./layouts/**/*.vue",
