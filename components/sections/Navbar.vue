@@ -1,7 +1,7 @@
 <template>
-  <header class="nav_background bg-primary fixed top-0 z-50 px-8 w-svw shadow">
+  <header class="nav-radial-gradiant bg-primary fixed top-0 z-50 px-8 w-full shadow">
     <div class="relative mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between">
-      <div class="logo h-12 md:h-24">
+      <div class="h-12 md:h-24">
         <a href="#">
           <img class="h-full object-contain" src="assets/logo.svg" alt=""/>
         </a>
@@ -15,25 +15,31 @@
                 d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z"/>
         </svg>
       </label>
-      <nav aria-label="Header Navigation" class="peer-checked:block hidden pl-2 py-6 sm:block sm:py-0">
-        <ul class="flex text-center flex-col gap-y-4 sm:flex-row sm:gap-x-8">
+      <nav class="peer-checked:block hidden pl-2 py-6 sm:block sm:py-0">
+        <ul aria-label="Primary" class="flex text-center flex-col gap-y-4 sm:flex-row sm:gap-x-8">
           <li>
-            <a class="text-text_default hover:text-logo_text" href="#handmade">Handmade</a>
+            <a class="hover:text-logo_text" href="#handmade">Handmade</a>
           </li>
           <li>
-            <a class="text-text_default hover:text-logo_text" href="#gallery">Gallerie</a>
+            <a class="hover:text-logo_text" href="#gallery">Gallerie</a>
           </li>
           <li>
             <a class="text-logo_text hover:text-amber-400" href="#shop">Shop</a>
           </li>
           <li>
-            <a class="text-text_default hover:text-logo_text" href="#about">About Me</a>
+            <a class="hover:text-logo_text" href="#about">About Me</a>
           </li>
           <li>
-            <a class="text-text_default hover:text-logo_text" href="#contact">Kontakt</a>
+            <a class="hover:text-logo_text" href="#contact">Kontakt</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
 </template>
+
+<style scoped>
+.nav-radial-gradiant {
+  background: radial-gradient(circle, #f9f9f9 70%, #f7d3df);
+}
+</style>
