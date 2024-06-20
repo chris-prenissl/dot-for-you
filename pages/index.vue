@@ -1,12 +1,14 @@
 <template>
   <div class="text-text_default">
     <Navbar/>
-    <Hero/>
-    <CreatorStory/>
-    <Gallery/>
-    <Shop/>
-    <About/>
-    <Contact/>
+    <main>
+      <Hero/>
+      <CreatorStory/>
+      <Gallery/>
+      <Shop/>
+      <About/>
+      <Contact/>
+    </main>
     <Footer/>
   </div>
 </template>
