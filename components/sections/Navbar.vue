@@ -1,5 +1,5 @@
 <template>
-  <header class="nav-radial-gradiant bg-primary fixed top-0 z-50 px-8 w-full shadow">
+  <header class="nav-radial-gradiant bg-primary fixed top-0 z-50 px-8 w-dvw shadow">
     <div class="relative mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between">
       <div class="h-12 md:h-24">
         <a href="#">
