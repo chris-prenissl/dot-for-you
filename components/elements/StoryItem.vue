@@ -1,35 +1,22 @@
 <script setup lang="ts">
-defineProps({
-  srcPath: String,
-  title: String,
-  description: String,
-  gridOrder: {
-    type: Number,
-    default: 0
-  }
-});
+import ArtImage from '~/components/elements/ArtImage.vue';
+
+defineProps<{
+  srcPath: string,
+  title: string,
+  description: string,
+  gridOrder: number
+}>();
 </script>
 
 <template>
-  <div class="flex flex-col md:grid md:grid-cols-2"
-       :data-aos="gridOrder === 1 ? 'fade-right' : 'fade-left'">
-    <img v-if="gridOrder !== 1" class="max-h-60vh object-cover content-center"
-         :src="srcPath"
-         :alt="title"
-    />
-    <div class="border-2 border-primary bg-primary text-text_on_primary p-8">
+  <div class="flex flex-col md:grid md:grid-cols-2 gap-2 drop-shadow-lg"
+    :data-aos="gridOrder === 0 ? 'fade-right' : 'fade-left'">
+    <ArtImage v-if="gridOrder !== 1" :src-path="srcPath" :title="title" />
+    <div class="bg-base text-text_on_primary p-8">
       <h1 class="text-4xl py-4">{{ title }}</h1>
       <p>{{ description }}</p>
     </div>
-    <img v-if="gridOrder === 1" class="max-h-60vh object-cover content-center order-first md:order-1"
-         :src="srcPath"
-         :alt="title"
-    />
+    <ArtImage v-if="gridOrder === 1" :srcPath="srcPath" :title="title" class="order-first md:order-1"/>
   </div>
 </template>
-
-<style scoped>
-.max-h-60vh {
-  max-height: 60lvh;
-}
-</style>
