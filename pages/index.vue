@@ -1,5 +1,5 @@
 <template>
-  <div class="text-text_default">
+  <div class="text-text_default bg-base">
     <Navbar/>
     <main>
       <Hero/>
