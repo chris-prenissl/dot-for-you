@@ -1,6 +1,5 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['nuxt-swiper', 'nuxt-aos'],
+  modules: ['nuxt-swiper', 'nuxt-aos', '@nuxtjs/tailwindcss'],
   ssr: true,
   css: ["~/assets/css/main.css"],
   postcss: {
@@ -9,4 +8,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  tailwindcss: {
+    viewer: true
+  }
 });
