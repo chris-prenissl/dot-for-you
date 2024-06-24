@@ -6,7 +6,7 @@ defineProps({
 
 <template>
   <a href="#"
-     class="bg-base p-6 border-pink-400 border-2 rounded-xl text-l text-center hover:border-base hover:text-primary">
+     class="p-4 bg-base border-pink-400 border rounded-sm text-l md:text-2xl hover:text-logo_text hover:drop-shadow-lg">
     {{ title }}
   </a>
 </template>
