@@ -5,18 +5,18 @@ import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
 
 <template>
   <section
-      class="hero-background-img relative flex flex-col items-center md:items-start lg:items-center justify-center min-h-svh bg-cover bg-center">
-    <div class="px-4 max-w-screen-lg box-border">
-      <div class="max-w-full min-w-80 p-8 m-4 backdrop-blur-sm rounded-xl">
-        <h1 class="lg:text-6xl md:text-4xl text-3xl font-bold mb-4">Mit Liebe handgemacht</h1>
-        <p class="text-left lg:text-3xl md:text-2xl text-l mb-4">
+      class="h-dvh hero-background-img content-center bg-cover bg-center">
+    <div class="min-w-96 max-w-screen-xl px-4 sm:px-16 m-auto">
+      <div class="p-8 backdrop-blur-lg -backdrop-hue-rotate-30 rounded-sm shadow-2xl">
+        <h1 class="text-3xl md:text-4xl 2xl:text-6xl font-bold mb-8">Mit Liebe handgemacht</h1>
+        <p class="text-xl md:text-2xl 2xl:text-3xl text-left mb-8">
           Aus einer Vielzahl an Materialien gestalte ich individuelle Dekorationen und Geschenke für dich.
           In meinem Sortiment findest du einzelne Artikel, Komplettsets sowie personalisierte Designs nach deinen
           Wünschen.
         </p>
-        <div class="flex flex-wrap justify-center sm:justify-start gap-4">
+        <div class="flex flex-wrap justify-center gap-8 sm:gap-16">
           <ButtonAnchorPrimary title="Zum Shop"/>
-          <ButtonAnchorSecondary title="Kontakt" />
+          <ButtonAnchorSecondary title="Kontakt"/>
         </div>
       </div>
     </div>
