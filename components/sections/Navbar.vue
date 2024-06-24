@@ -1,13 +1,13 @@
 <template>
-  <header class="nav-radial-gradiant bg-primary fixed top-0 z-50 px-8 w-dvw shadow">
-    <div class="relative mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between">
+  <header class="w-full nav-radial-gradiant bg-primary fixed top-0 z-50 shadow">
+    <div class="max-w-screen-lg px-8 py-4 mx-auto flex flex-wrap items-center justify-between">
       <div class="h-12 md:h-24">
         <a href="#">
           <img class="h-full object-contain" src="assets/logo.svg" alt=""/>
         </a>
       </div>
       <input class="peer hidden" type="checkbox" id="navbar-open"/>
-      <label class="absolute right-0 mt-4 cursor-pointer text-xl sm:hidden" for="navbar-open">
+      <label class="mt-2 cursor-pointer text-4xl sm:hidden" for="navbar-open">
         <span class="sr-only">Toggle Navigation</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet"
              viewBox="0 0 448 512">
@@ -15,13 +15,13 @@
                 d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z"/>
         </svg>
       </label>
-      <nav class="peer-checked:block hidden pl-2 py-6 sm:block sm:py-0">
-        <ul aria-label="Primary" class="flex text-center flex-col gap-y-4 sm:flex-row sm:gap-x-8">
+      <nav class="w-full sm:w-auto peer-checked:block hidden pl-2 py-6 sm:block">
+        <ul aria-label="Primary" class="flex text-right flex-col sm:flex-row sm:gap-4">
           <li>
-            <a class="hover:text-logo_text" href="#handmade">Handmade</a>
+            <a class="hover:text-logo_text" href="#handmade"><div class="w-full">Handmade</div></a>
           </li>
           <li>
-            <a class="hover:text-logo_text" href="#gallery">Gallerie</a>
+            <a class="hover:text-logo_text" href="#gallery">Galerie</a>
           </li>
           <li>
             <a class="text-logo_text hover:text-amber-400" href="#shop">Shop</a>
