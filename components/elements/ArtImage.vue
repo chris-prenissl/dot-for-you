@@ -6,5 +6,5 @@ defineProps<{
 </script>
 
 <template>
-  <img class="max-h-60lvh max-w-60lvw object-cover content-center" :src="srcPath" :alt="title" />
+  <img class="object-cover object-center" :src="srcPath" :alt="title" />
 </template>

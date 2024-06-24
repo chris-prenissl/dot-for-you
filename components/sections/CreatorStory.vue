@@ -10,11 +10,14 @@ defineProps({
 </script>
 
 <template>
-  <section id="handmade" class="creator-linear-gradient m-auto min-h-lvh max-w-screen-2xl p-8 space-y-8">
-    <StoryItem src-path="/gallery_images/gallery_1.jpg" title="Für deinen Anlass" :description="loremText"
-      :grid-order="1" />
-    <StoryItem src-path="/gallery_images/gallery_2.jpg" title="Handmade" :description="loremText" :grid-order="0" />
-    <StoryItem src-path="/gallery_images/gallery_3.jpg" title="Schenken" :description="loremText" :grid-order="1" />
+  <section id="handmade" class="creator-linear-gradient min-h-lvh p-8">
+    <div
+        class="max-w-screen-xl m-auto flex flex-col items-center justify-center gap-8">
+      <StoryItem src-path="/gallery_images/gallery_1.jpg" title="Für deinen Anlass" :description="loremText"
+                 :grid-order="1"/>
+      <StoryItem src-path="/gallery_images/gallery_2.jpg" title="Handmade" :description="loremText" :grid-order="0"/>
+      <StoryItem src-path="/gallery_images/gallery_3.jpg" title="Schenken" :description="loremText" :grid-order="1"/>
+    </div>
   </section>
 </template>
 

@@ -8,19 +8,28 @@
     .m-inline {
         margin-inline: auto;
     }
+
     .h-1\/12 {
         height: 10vh;
     }
+
     .h-vh {
         height: 100vh;
     }
+
     .min-h-50lvh {
         min-height: 50lvh;
     }
+
     .max-h-60lvh {
         max-height: 60lvh;
     }
+
     .max-w-60lwh {
         max-width: 60lvw;
+    }
+
+    .h-40lvh {
+        height: 40lvh;
     }
 }
