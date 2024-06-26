@@ -29,11 +29,11 @@
         max-width: 60lvw;
     }
 
-    .h-40lvh {
-        height: 40lvh;
+    .h-40svh {
+        height: 40svh;
     }
 
     .h-50svh {
-            height: 50svh;
+        height: 50svh;
     }
 }
