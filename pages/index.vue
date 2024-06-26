@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import Navbar from '~/components/sections/Navbar.vue'
 import Hero from '~/components/sections/Hero.vue'
 import Shop from '~/components/sections/Shop.vue'
