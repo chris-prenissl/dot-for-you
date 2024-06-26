@@ -1,7 +1,7 @@
 <template>
-  <section id="gallery" class="max-h-lvh sm:p-8 flex flex-col justify-center items-center gap-2 sm:gap-4 gallery-radial-gradiant shadow-xl">
+  <section id="gallery" class="p-4 sm:p-8 flex flex-col justify-center items-center gap-2 sm:gap-4 gallery-radial-gradiant shadow-xl">
     <h1 class="text-4xl font-bold">Galerie</h1>
-    <div class="w-lvw p-2 sm:p-8" data-aos="fade-right">
+    <div class="w-dvw max-w-screen-lg p-2" data-aos="fade-right">
       <Swiper
           :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
           :centered-slides="true"

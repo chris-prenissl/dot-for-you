@@ -32,4 +32,8 @@
     .h-40lvh {
         height: 40lvh;
     }
+
+    .h-50svh {
+            height: 50svh;
+    }
 }
