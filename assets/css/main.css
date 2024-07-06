@@ -36,4 +36,16 @@
     .h-50svh {
         height: 50svh;
     }
+
+    .md\:h-50svh {
+        @media (min-width: 768px) {
+            height: 50svh;
+        }
+    }
+
+    .md\:w-50svh {
+        @media (min-width: 768px) {
+            width: 50svw;
+        }
+    }
 }
