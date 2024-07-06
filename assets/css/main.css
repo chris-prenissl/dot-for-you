@@ -17,16 +17,16 @@
         height: 100vh;
     }
 
-    .min-h-50lvh {
-        min-height: 50lvh;
+    .min-h-50svh {
+        min-height: 50svh;
     }
 
-    .max-h-60lvh {
-        max-height: 60lvh;
+    .max-h-60svh {
+        max-height: 60svh;
     }
 
-    .max-w-60lwh {
-        max-width: 60lvw;
+    .max-w-60swh {
+        max-width: 60svw;
     }
 
     .h-40svh {
@@ -43,9 +43,13 @@
         }
     }
 
-    .md\:w-50svh {
+    .md\:w-40svh {
         @media (min-width: 768px) {
-            width: 50svw;
+            width: 40svw;
         }
+    }
+
+    .max-h-3\/4svh {
+        max-height: 75svh;
     }
 }

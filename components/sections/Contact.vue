@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="m-auto min-h-50lvh flex flex-col justify-between align-middle bg-primary text-base p-20">
+  <section id="contact" class="m-auto min-h-50svh flex flex-col justify-between align-middle bg-primary text-base p-20">
     <h1 class="text-4xl text-center font-bold">Kontakt</h1>
     <div class="text-center flex flex-col items-center justify-center gap-4 h-full">
       <h3 class="text-2xl mb-4">Folge mir für weitere Ideen</h3>

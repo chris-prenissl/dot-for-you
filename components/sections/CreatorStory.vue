@@ -4,13 +4,13 @@ import StoryItem from "~/components/elements/StoryItem.vue";
 defineProps({
   loremText: {
     type: String,
-    default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum nibh a lorem rutrum, sit amet euismod augue egestas. Aenean id condimentum justo, vel pharetra magna. Suspendisse a nunc ornare, tempus massa et, dignissim justo. Fusce est metus, rhoncus non luctus nec, porttitor vel quam. Curabitur est erat, elementum id aliquam at, consectetur a tellus. Donec id luctus augue. Nullam at commodo enim, sed porttitor lectus. Curabitur non risus ac ante ornare porttitor a ut ipsum. Donec a tellus erat."
+    default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum nibh a lorem rutrum, sit amet euismod augue egestas. Aenean id condimentum justo, vel pharetra magna. Suspendisse a nunc ornare, tempus massa et, dignissim justo. Fusce est metus, rhoncus non luctus nec, porttitor vel quam."
   }
 });
 </script>
 
 <template>
-  <section id="handmade" class="creator-linear-gradient min-h-lvh p-8">
+  <section id="handmade" class="creator-linear-gradient min-h-svh p-8">
     <div
         class="max-w-screen-xl m-auto flex flex-col items-center justify-center gap-8">
       <StoryItem src-path="/gallery_images/gallery_1.jpg" title="Für deinen Anlass" :description="loremText"

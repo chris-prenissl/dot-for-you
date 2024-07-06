@@ -5,7 +5,7 @@ import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
 
 <template>
   <section
-      class="h-dvh hero-background-img content-center bg-cover bg-center">
+      class="h-svh hero-background-img content-center bg-cover bg-center">
     <div class="min-w-96 max-w-screen-xl px-4 sm:px-16 m-auto">
       <div class="p-8 backdrop-blur-lg -backdrop-hue-rotate-30 rounded-sm shadow-2xl">
         <h1 class="text-3xl md:text-4xl 2xl:text-6xl font-bold mb-8">Mit Liebe handgemacht</h1>
