@@ -14,7 +14,7 @@
   <header class="w-full nav-radial-gradiant bg-primary fixed top-0 z-50 shadow">
     <div class="max-w-screen-lg px-8 py-4 mx-auto flex flex-wrap items-center justify-between">
       <div class="h-12 md:h-24">
-        <a href="#">
+        <a href="#" class="cursor-pointer">
           <img class="h-full object-contain" src="assets/logo.svg" alt=""/>
         </a>
       </div>
