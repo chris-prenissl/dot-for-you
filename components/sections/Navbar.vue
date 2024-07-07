@@ -1,5 +1,6 @@
 <script setup lang="ts">
-  const menuOpen = ref(false)
+  const menuOpen = ref(false);
+  const heroIntersection = ref(false);
 
   function closeMenu() {
     menuOpen.value = false;
@@ -8,12 +9,22 @@
   function onToggleMenu(): void {
     menuOpen.value = !menuOpen.value;
   }
+
+  onMounted(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+          heroIntersection.value = entry.isIntersecting;
+      })
+    })
+    const logo = document.getElementById('hero-element')!;
+    observer.observe(logo);
+  });
 </script>
 
 <template>
   <header class="w-full nav-radial-gradiant bg-primary fixed top-0 z-50 shadow">
     <div class="max-w-screen-lg px-8 py-4 mx-auto flex flex-wrap items-center justify-between">
-      <div class="h-12 md:h-24">
+      <div id="logo" :class="heroIntersection ? 'md:h-24' : 'md:h-12'" class="h-12">
         <a href="#" class="cursor-pointer">
           <img class="h-full object-contain" src="assets/logo.svg" alt=""/>
         </a>
@@ -28,7 +39,7 @@
         </svg>
       </label>
       <nav :class="!menuOpen ? 'hidden' : ''" class="w-full sm:w-auto pl-2 py-6 sm:block">
-        <ul aria-label="Primary" class="flex text-right flex-col sm:flex-row sm:gap-4">
+        <ul aria-label="Primary" class="text-2xl sm:text-xl flex text-right flex-col sm:flex-row gap-2 sm:gap-4">
           <li>
             <a @click="closeMenu" class="hover:text-logo_text" href="#handmade"><div class="w-full">Handmade</div></a>
           </li>
