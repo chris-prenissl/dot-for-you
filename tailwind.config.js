@@ -17,7 +17,8 @@ export const theme = {
       text_on_primary: '#333333'
     },
     fontFamily : {
-      sans: ['Quicksand', 'sans-serif'],
+      sans: ['Noto Sans', 'sans-serif'],
+      weight: ['100', '200'],
     }
   },
 };
