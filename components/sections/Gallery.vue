@@ -8,9 +8,7 @@
           :centered-slides-bounds="true"
           :slides-per-view="1"
           :loop="true"
-          :pagination="{
-            clickable: true,
-          }"
+          :pagination="true"
           :navigation="{
             enabled: true
           }"
@@ -72,6 +70,18 @@ export default {
 
 .swiper-button-prev {
   color: grey;
+}
+
+.swiper-button-prev::after {
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.swiper-button-next::after {
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
 .swiper-button-next {
