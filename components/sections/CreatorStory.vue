@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-  <section id="handmade" class="creator-linear-gradient min-h-svh p-8">
+  <section id="handmade" class="creator-linear-gradient">
     <div
         class="max-w-screen-xl m-auto flex flex-col items-center justify-center gap-8">
       <StoryItem src-path="/gallery_images/gallery_1.jpg" title="Für deinen Anlass" :description="loremText"

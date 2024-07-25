@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="p-4 md:p-20 about-linear-gradient backdrop-blur min-h-svh flex flex-wrap items-center justify-center gap-8">
+  <section id="about" class="about-linear-gradient backdrop-blur flex flex-wrap items-center justify-center gap-8">
     <img data-aos="fade-right" class="sm:w-40svh md:max-w-screen-lg border-8 content-center object-cover shadow-2xl" src="/public/melanie/melanie.jpg" alt="Melanie" />
     <div data-aos="fade-left" class="sm:w-40svh md:max-w-screen-lg p-4 md:p-16 bg-primary shadow-2xl">
       <h2 class="mb-4 md:mb-16 text-3xl font-bold">Melanie</h2>
