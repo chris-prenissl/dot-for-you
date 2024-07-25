@@ -23,14 +23,14 @@
 
 <template>
   <header class="w-full nav-radial-gradiant bg-primary fixed top-0 z-50 shadow">
-    <div class="max-w-screen-lg px-8 py-4 mx-auto flex flex-wrap items-center justify-between">
+    <div class="max-w-screen-lg py-4 mx-auto flex items-center justify-between">
       <div id="logo" :class="heroIntersection ? 'md:h-24' : 'md:h-12'" class="h-12">
         <a href="#" class="cursor-pointer">
           <img class="h-full object-contain" src="assets/logo.svg" alt=""/>
         </a>
       </div>
       <input @input="onToggleMenu" id="navbar-open" class="peer hidden" type="checkbox"/>
-      <label class="mt-2 cursor-pointer text-4xl sm:hidden" for="navbar-open">
+      <label class="p-2 mt-2 cursor-pointer sm:hidden" for="navbar-open">
         <span class="sr-only">Toggle Navigation</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet"
              viewBox="0 0 448 512">
@@ -39,7 +39,7 @@
         </svg>
       </label>
       <nav :class="!menuOpen ? 'hidden' : ''" class="w-full sm:w-auto pl-2 py-6 sm:block">
-        <ul aria-label="Primary" class="text-2xl sm:text-xl flex text-right flex-col sm:flex-row gap-2 sm:gap-4">
+        <ul aria-label="Primary" class="text-2xl sm:text-xs flex text-right flex-col sm:flex-row gap-2 sm:gap-8">
           <li>
             <a @click="closeMenu" class="hover:text-logo_text" href="#handmade"><div class="w-full">Handmade</div></a>
           </li>
