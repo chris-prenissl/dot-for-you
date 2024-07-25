@@ -7,7 +7,7 @@
 
     <div class="text-center mt-2 text-sm">
       &copy; 2024 - {{ new Date().getFullYear() }} Christoph Prenissl. All rights reserved.
-      Thanks to svgrepo.com for the social media icons (License under https://www.svgrepo.com/page/licensing/#CC%20Attribution).
+      Thanks to svgrepo.com for the social media icons (<a href="https://www.svgrepo.com/page/licensing/#CC%20Attribution">License</a>).
     </div>
   </footer>
 </template>
