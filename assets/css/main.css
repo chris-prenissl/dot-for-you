@@ -27,6 +27,12 @@
         font-family: "Playfair Display", serif;
     }
 
+    .section-header {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+
     .m-inline {
         margin-inline: auto;
     }
