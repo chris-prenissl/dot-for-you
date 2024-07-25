@@ -1,6 +1,6 @@
 <template>
   <section id="gallery" class="flex flex-col justify-between items-center gap-2 sm:gap-4 gallery-radial-gradiant shadow-xl">
-    <h1 class="text-4xl font-bold">Galerie</h1>
+    <h1 class="section-header">Galerie</h1>
     <div class="w-dvw h-full max-w-screen-2xl px-2" data-aos="fade-right">
       <Swiper
           :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"

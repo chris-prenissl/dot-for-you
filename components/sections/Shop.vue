@@ -4,7 +4,7 @@ import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
 
 <template>
   <section id="shop" class="flex flex-col items-center justify-center gap-16">
-      <h1 class="text-4xl font-bold">Shop</h1>
+      <h1 class="section-header">Shop</h1>
       <img class="object-cover content-center" src="/public/gallery_images/gallery_1.jpg" alt="Shop">
       <ul>
         <li>1. Bestellen</li>
