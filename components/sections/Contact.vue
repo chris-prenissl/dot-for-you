@@ -3,7 +3,7 @@
     <h1 class="text-4xl text-center font-bold">Kontakt</h1>
     <div class="text-center flex flex-col items-center justify-center gap-16 h-full">
       <h3 class="text-2xl mb-4">Folge mir für weitere Ideen</h3>
-      <div class="flex justify-center space-x-8 sd:space-x-16 mb-4">
+      <div class="flex flex-col sd:flex-row justify-center sd:space-x-16 space-y-4 mb-4">
         <a href="https://wa.me/491637917232" target="_blank" class="flex flex-row justify-center items-center gap-2">
           <svg class="h-10" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path class="fill-text_on_primary" d="M12.228,5.84a5.961,5.961,0,0,0-5.052,9.13l.142.225-.6,2.2L8.971,16.8l.218.129a5.947,5.947,0,0,0,3.034.83h0a5.961,5.961,0,0,0,0-11.922Zm3.506,8.52a1.841,1.841,0,0,1-1.21.852,2.447,2.447,0,0,1-1.128-.071,10.013,10.013,0,0,1-1.022-.377,7.991,7.991,0,0,1-3.061-2.7,3.48,3.48,0,0,1-.732-1.853,2.012,2.012,0,0,1,.627-1.495.662.662,0,0,1,.478-.224c.12,0,.239,0,.344.006s.257-.041.4.308.508,1.24.552,1.33a.329.329,0,0,1,.015.314,1.186,1.186,0,0,1-.179.3c-.089.1-.188.233-.269.314s-.183.186-.078.365a5.363,5.363,0,0,0,1,1.241,4.857,4.857,0,0,0,1.441.889c.179.09.283.075.388-.044s.448-.523.567-.7.239-.149.4-.089,1.045.493,1.224.582.3.135.344.21A1.507,1.507,0,0,1,15.734,14.36ZM21,2H3A1,1,0,0,0,2,3V21a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V3A1,1,0,0,0,21,2ZM12.225,18.973h0A7.165,7.165,0,0,1,8.8,18.1l-3.8,1,1.018-3.716a7.172,7.172,0,1,1,6.214,3.591Z"/>
@@ -19,7 +19,7 @@
           Instagram
         </a>
         <a href="https://m.facebook.com/61560145346862/" target="_blank" class="flex flex-row justify-center items-center gap-2">
-          <svg class="h-12" viewBox="-5.5 0 32 32" xmlns="http://www.w3.org/2000/svg">
+          <svg class="w-12" viewBox="-4 0 32 32" xmlns="http://www.w3.org/2000/svg">
             <path class="fill-text_on_primary" d="M1.188 5.594h18.438c0.625 0 1.188 0.563 1.188 1.188v18.438c0 0.625-0.563 1.188-1.188 1.188h-18.438c-0.625 0-1.188-0.563-1.188-1.188v-18.438c0-0.625 0.563-1.188 1.188-1.188zM14.781 17.281h2.875l0.125-2.75h-3v-2.031c0-0.781 0.156-1.219 1.156-1.219h1.75l0.063-2.563s-0.781-0.125-1.906-0.125c-2.75 0-3.969 1.719-3.969 3.563v2.375h-2.031v2.75h2.031v7.625h2.906v-7.625z"></path>
           </svg>
           Facebook
