@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-x-hidden text-text_default bg-base">
     <Navbar/>
-    <main>
+    <main class="min-w-60">
       <Hero/>
       <CreatorStory/>
       <Gallery/>
