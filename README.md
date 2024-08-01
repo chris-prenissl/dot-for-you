@@ -1,3 +1,5 @@
+<img src="public/favicon.ico" alt="DotForYou Favicon" height="32"/>
+
 # Dot For You
 
 ## Overview
@@ -10,7 +12,8 @@ _TypeScript_ | _Nuxt_ | _Tailwind_ | _Swiper_
 
 ## Images
 
-![DotForYou mobile](screenshots/screenshot_mobile.png) ![DotForYou desktop](screenshots/screenshot_desktop.png)
+<img src="screenshots/screenshot_mobile.png" alt="Screenshot Mobile" height="400"/>
+<img src="screenshots/screenshot_desktop.png" alt="Screenshot Desktop" height="400"/>
 
 ## Usage
 
