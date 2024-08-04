@@ -9,6 +9,7 @@
           :slides-per-view="1"
           :loop="true"
           :pagination="true"
+          :autoplay="true"
           :navigation="{
             enabled: true
           }"
@@ -16,7 +17,7 @@
         <SwiperSlide
             v-for="(image, index) in images"
             :key="index">
-          <GallerySlideItem :title="image.title" :img-url="image.url" :description="image.description"/>
+          <GallerySlideItem class="m-auto w-full" :title="image.title" :img-url="image.url" :description="image.description"/>
         </SwiperSlide>
       </Swiper>
     </div>
