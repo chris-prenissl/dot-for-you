@@ -17,7 +17,7 @@
         </SocialItem>
       </div>
       <div
-          class="flex flex-col flex-wrap lg:flex-row gap-1 justify-center items-center text-nowrap m-auto">
+          class="flex flex-col flex-wrap lg:flex-row gap-1 justify-center items-center m-auto text-center">
         <AddressItem href="tel:+491637917232" text="+49 163 791 72 32">
           <Phone/>
         </AddressItem>
