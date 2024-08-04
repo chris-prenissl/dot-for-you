@@ -17,7 +17,7 @@
         <SwiperSlide
             v-for="(image, index) in images"
             :key="index">
-          <GallerySlideItem class="m-auto w-full" :title="image.title" :img-url="image.url" :description="image.description"/>
+          <GallerySlideItem class="m-auto max-h-1080px w-auto" :title="image.title" :img-url="image.url" :description="image.description"/>
         </SwiperSlide>
       </Swiper>
     </div>
@@ -84,6 +84,10 @@ export default {
   @media (max-width: 768px) {
     font-size: 1rem;
   }
+}
+
+.max-h-1080px {
+  max-height: 1080px !important;
 }
 
 .swiper-button-next {
