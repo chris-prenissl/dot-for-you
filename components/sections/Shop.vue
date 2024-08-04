@@ -11,6 +11,6 @@ import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
         <li>2. Abholen</li>
         <li>3. Freude geben</li>
       </ul>
-      <ButtonAnchorPrimary title="Zum Shop"/>
+      <ButtonAnchorPrimary title="Zum Shop" path="https://wa.me/c/491637917232"/>
   </section>
 </template>

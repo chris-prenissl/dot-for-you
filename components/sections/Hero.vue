@@ -9,13 +9,13 @@ import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
       <div id="hero-element" class="p-8 backdrop-blur-lg -backdrop-hue-rotate-30 rounded-sm shadow-2xl">
         <h1 class="text-3xl font-bold mb-8">Mit Liebe handgemacht</h1>
         <p class="text-l text-left mb-8">
-          Aus einer Vielzahl an Materialien gestalte ich individuelle Dekorationen und Geschenke für dich.
+          Aus einer Vielzahl an Materialien gestalte ich individuelle Dekorationen, Geschenke und Mitbringsel.
           In meinem Sortiment findest du einzelne Artikel, Komplettsets sowie personalisierte Designs nach deinen
           Wünschen.
         </p>
         <div class="flex flex-wrap justify-center gap-8 sm:gap-16">
-          <ButtonAnchorPrimary title="Zum Shop"/>
-          <ButtonAnchorSecondary title="Kontakt"/>
+          <ButtonAnchorPrimary title="Zum Shop" path="https://wa.me/c/491637917232"/>
+          <ButtonAnchorSecondary title="Kontakt" path="#contact"/>
         </div>
       </div>
     </div>
