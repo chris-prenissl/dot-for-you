@@ -27,6 +27,6 @@ import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
   min-height: calc(100svh - 6rem);
 }
 .hero-background-img {
-  background-image: url('/gallery_images/hero_img.jpg')
+  background-image: url('public/gallery_images/hero_img.jpg')
 }
 </style>
