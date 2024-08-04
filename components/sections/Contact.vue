@@ -3,7 +3,7 @@
     <h1 class="section-header text-text_on_primary">Kontakt</h1>
     <div class="m-auto flex flex-col justify-evenly">
       <div class="flex flex-col items-start flex-wrap md:flex-row md:items-center p-16 gap-6">
-        <SocialItem href="https://wa.me/491637917232" text="WhatsApp Shop">
+        <SocialItem href="https://wa.me/c/491637917232" text="WhatsApp Shop">
           <WhatsAppBusiness/>
         </SocialItem>
         <SocialItem href="https://wa.me/491637917232" text="WhatsApp Chat">
