@@ -48,9 +48,6 @@
             <a @click="closeMenu" class="hover:text-logo_text" href="#gallery">Galerie</a>
           </li>
           <li>
-            <a @click="closeMenu" class="text-logo_text hover:text-amber-400" href="#shop">Shop</a>
-          </li>
-          <li>
             <a @click="closeMenu" class="hover:text-logo_text" href="#about">About Me</a>
           </li>
           <li>

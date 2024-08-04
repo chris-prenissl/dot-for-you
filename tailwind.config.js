@@ -10,7 +10,7 @@ export const content = [
 export const theme = {
   extend: {
     colors : {
-      base: '#f9f9f9',
+      light_white: '#f9f9f9',
       primary: '#f7d3df',
       logo_text: '#edb9c0',
       text_default: '#575656',

@@ -1,9 +1,12 @@
 <template>
-  <section id="contact" class="m-auto flex flex-col justify-between bg-primary text-base">
+  <section id="contact" class="m-auto flex flex-col justify-between bg-primary text-light_text">
     <h1 class="section-header text-text_on_primary">Kontakt</h1>
     <div class="m-auto flex flex-col justify-evenly">
-      <div class="flex flex-col sm:flex-row p-16 justify-evenly gap-6">
-        <SocialItem href="https://wa.me/491637917232" text="WhatsApp">
+      <div class="flex flex-col items-start flex-wrap md:flex-row md:items-center p-16 gap-6">
+        <SocialItem href="https://wa.me/491637917232" text="WhatsApp Shop">
+          <WhatsAppBusiness/>
+        </SocialItem>
+        <SocialItem href="https://wa.me/491637917232" text="WhatsApp Chat">
           <WhatsApp/>
         </SocialItem>
         <SocialItem href="https://www.instagram.com/dot_for_you_" text="Instagram">
@@ -14,7 +17,7 @@
         </SocialItem>
       </div>
       <div
-          class="flex flex-col flex-wrap lg:flex-row gap-1 justify-center items-center text-nowrap">
+          class="flex flex-col flex-wrap lg:flex-row gap-1 justify-center items-center text-nowrap m-auto">
         <AddressItem href="tel:+491637917232" text="+49 163 791 72 32">
           <Phone/>
         </AddressItem>
@@ -40,4 +43,5 @@ import SocialItem from "~/components/elements/SocialItem.vue";
 import Facebook from "~/components/svgs/Facebook.vue";
 import Instagram from "~/components/svgs/Instagram.vue";
 import WhatsApp from "~/components/svgs/WhatsApp.vue";
+import WhatsAppBusiness from "~/components/svgs/WhatsAppBusiness.vue";
 </script>
