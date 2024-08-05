@@ -5,8 +5,7 @@ import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
 
 <template>
   <section id="hero" class="hero-background-img content-center bg-cover bg-center">
-    <div class="p-2 sm:p-16 m-auto">
-      <div id="hero-element" class="max-w-screen-md p-8 rounded-sm bg-text_on_primary bg-opacity-75">
+      <div id="hero-element" class="max-w-screen-md p-8 m-auto rounded-sm bg-text_on_primary bg-opacity-75">
         <h1 class="text-3xl font-bold text-light_white mb-8">Mit Liebe handgemacht</h1>
         <p class="text-xl text-light_white mb-8">
           Aus einer Vielzahl an Materialien gestalte ich individuelle Dekorationen, Geschenke und Mitbringsel.
@@ -18,7 +17,6 @@ import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
           <ButtonAnchorSecondary title="Kontakt" path="#contact"/>
         </div>
       </div>
-    </div>
   </section>
 </template>
 
