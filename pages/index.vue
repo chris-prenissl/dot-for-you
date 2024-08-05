@@ -9,6 +9,7 @@
       <Contact/>
     </main>
     <Footer/>
+    <CookieDialog/>
   </div>
 </template>
 
@@ -20,9 +21,11 @@ import Contact from "~/components/sections/Contact.vue";
 import Footer from "~/components/sections/Footer.vue";
 import Gallery from "~/components/sections/Gallery.vue";
 import CreatorStory from "~/components/sections/CreatorStory.vue";
+import CookieDialog from "~/components/elements/CookieDialog.vue";
 
 export default {
   components: {
+    CookieDialog,
     CreatorStory,
     Gallery,
     Footer,
