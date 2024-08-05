@@ -13,7 +13,7 @@ import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
           In meinem Sortiment findest du einzelne Artikel, Komplettsets sowie personalisierte Designs nach deinen
           Wünschen.
         </p>
-        <div class="flex flex-wrap justify-center gap-8 sm:gap-16">
+        <div class="flex flex-col sm:flex-row flex-wrap gap-8 sm:gap-32">
           <ButtonAnchorPrimary title="Zum WhatsApp Shop" path="https://wa.me/c/491637917232"/>
           <ButtonAnchorSecondary title="Kontakt" path="#contact"/>
         </div>
