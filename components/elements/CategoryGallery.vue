@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <Swiper class="h-1/2 sm:w-1/2 drop-shadow-lg"
+  <Swiper class="h-1/2 max-w-full sm:w-1/2 drop-shadow-lg"
           :modules="[SwiperAutoplay]"
           :centered-slides="true"
           :centered-slides-bounds="true"

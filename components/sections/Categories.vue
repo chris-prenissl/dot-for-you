@@ -28,6 +28,32 @@ const categories: Array<Category> = [
       },
     ],
     description: '- Stabkerzen'
+  },
+  {
+    title: 'Kerzen mit Motiven zu vielen Anlässen',
+    images: [
+      {
+        title: 'Kerze 1',
+        description: 'Kerze 1',
+        url: '/category_images/kerzen/kerze1.png'
+      },
+      {
+        title: 'Kerze 2',
+        description: 'Kerze 2',
+        url: '/category_images/kerzen/kerze2.png'
+      },
+      {
+        title: 'Kerze 3',
+        description: 'Kerze 3',
+        url: '/category_images/kerzen/kerze3.png'
+      },
+      {
+        title: 'Kerze 4',
+        description: 'Kerze 4',
+        url: '/category_images/kerzen/kerze4.png'
+      },
+    ],
+    description: '- Stabkerzen'
   }
 ]
 
