@@ -42,7 +42,7 @@ onMounted(() => {
         <span v-else class="font-light">✖️</span>
       </label>
       <nav :class="!menuOpen ? 'hidden' : ''" class="w-full sm:w-auto text-nowrap p-8 sm:block">
-        <ul aria-label="Primary" class="text-2xl sm:text-xs flex text-right flex-col sm:flex-row gap-2 sm:gap-8">
+        <ul aria-label="Primary" class="text-2xl sm:text-lg flex text-right flex-col sm:flex-row gap-2 sm:gap-8">
           <li>
             <a @click="closeMenu" class="hover:text-logo_text" href="#handmade">
               <div class="w-full">Handmade</div>
