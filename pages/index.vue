@@ -3,7 +3,7 @@
     <Navbar/>
     <main class="min-w-60">
       <Hero/>
-      <CreatorStory/>
+      <Categories/>
       <Gallery/>
       <About/>
       <Contact/>
@@ -20,13 +20,13 @@ import About from '~/components/sections/About.vue'
 import Contact from "~/components/sections/Contact.vue";
 import Footer from "~/components/sections/Footer.vue";
 import Gallery from "~/components/sections/Gallery.vue";
-import CreatorStory from "~/components/sections/CreatorStory.vue";
+import Categories from "~/components/sections/Categories.vue";
 import CookieDialog from "~/components/elements/CookieDialog.vue";
 
 export default {
   components: {
+    Categories,
     CookieDialog,
-    CreatorStory,
     Gallery,
     Footer,
     Contact,
