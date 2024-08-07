@@ -21,7 +21,12 @@
         <h2 class="text-2xl font-semibold mt-12">Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
         <p class="text-lg">Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
           Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+        <h2 class="text-2xl font-semibold mt-12">Danksagung</h2>
+        <p>Thanks to svgrepo.com for the social media icons (<a href="https://www.svgrepo.com/page/licensing/#CC%20Attribution">License</a>).</p>
       </div>
     </div>
   </div>
 </template>
+<script setup lang="ts">
+</script>
