@@ -4,7 +4,6 @@
     <main class="min-w-60">
       <Hero/>
       <Categories/>
-      <Gallery/>
       <About/>
       <Contact/>
     </main>
@@ -19,15 +18,13 @@ import Hero from '~/components/sections/Hero.vue'
 import About from '~/components/sections/About.vue'
 import Contact from "~/components/sections/Contact.vue";
 import Footer from "~/components/sections/Footer.vue";
-import Gallery from "~/components/sections/Gallery.vue";
-import Categories from "~/components/sections/Categories.vue";
+import Categories from "~/components/sections/Portfolio.vue";
 import CookieDialog from "~/components/elements/CookieDialog.vue";
 
 export default {
   components: {
     Categories,
     CookieDialog,
-    Gallery,
     Footer,
     Contact,
     Navbar,

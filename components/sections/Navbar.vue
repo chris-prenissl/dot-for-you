@@ -44,12 +44,12 @@ onMounted(() => {
       <nav :class="!menuOpen ? 'hidden' : ''" class="w-full sm:w-auto text-nowrap p-8 sm:block">
         <ul aria-label="Primary" class="text-2xl sm:text-lg flex text-right flex-col sm:flex-row gap-2 sm:gap-8">
           <li>
-            <a @click="closeMenu" class="hover:text-logo_text" :href="'#handmade'">
+            <a @click="closeMenu" class="text-logo_text hover:text-text_on_primary" :href="'#'">
               <div class="w-full">Handmade</div>
             </a>
           </li>
           <li>
-            <a @click="closeMenu" class="hover:text-logo_text" :href="'#gallery'">Galerie</a>
+            <a @click="closeMenu" class="hover:text-logo_text" :href="'#portfolio'">Portfolio</a>
           </li>
           <li>
             <a @click="closeMenu" class="hover:text-logo_text" :href="'#about'">About Me</a>

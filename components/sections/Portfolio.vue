@@ -4,6 +4,46 @@ import CategoryItem from "~/components/elements/CategoryItem.vue";
 
 const categories: Array<Category> = [
   {
+    title: "Dotpainting",
+    images: [
+
+    ],
+    description: "Punkt für Punkt kreiere ich mithilfe verschiedener Rundstäbchen kreative Mandalas und Muster auf " +
+        "Keramik, Holz und anderen Materialien. Ich verwende dafür hochwertige Acryl - bzw. Keramikfarben, letztere sind " +
+        "wasserfest. Ich verziere z.B. Tassen, Gläser, Schlüsselanhänger, Lesezeichen und bemale auch Leinwände."
+  },
+  {
+    title: "Gießpulver",
+    images: [
+
+    ],
+    description: ""
+  },
+  {
+    title: "Plotten",
+    images: [
+      {
+        title: 'Plotten 1',
+        url: '/category_images/plotten/plotten1.png'
+      },
+      {
+        title: 'Plotten 2',
+        url: '/category_images/plotten/plotten2.png'
+      },
+      {
+        title: 'Plotten 3',
+        url: '/category_images/plotten/plotten3.png'
+      },
+      {
+        title: 'Plotten 4',
+        url: '/category_images/plotten/plotten4.png'
+      },
+    ],
+    description: "Plotten kommt aus dem Englischen “to plot” was “zeichnen” oder “darstellen” bedeutet. Es werden mit " +
+        "Hilfe von Vektorgrafiken ausgewählte Motive auf unterschiedlichen Materialien übertragen. So verleihe ich " +
+        "meinen Artikeln ihr individuelles und personalisiertes Design."
+  },
+  {
     title: 'Kerzen mit Motiven zu vielen Anlässen',
     images: [
       {
@@ -23,7 +63,7 @@ const categories: Array<Category> = [
         url: '/category_images/kerzen/kerze4.png'
       },
     ],
-    description: "* Stabkerzen\n-weiß 2,3/20\n-farbig lang 2,2/18\n-farbig kurz 2,2/10\n(Farbauswahl je nach Vorrat)"
+    description: "* Stabkerzen -weiß 2,3/20 -farbig lang 2,2/18 -farbig kurz 2,2/10 (Farbauswahl je nach Vorrat)"
   },
   {
     title: 'Holzklötzchen',
@@ -49,7 +89,8 @@ const categories: Array<Category> = [
         url: '/category_images/holzkloetzchen/kloetzchen5.png'
       }
     ],
-    description: 'Natürliche und robuste Klötzchen in verschiedenen Holzarten, die je nach Bastelidee von mir gesägt, geschliffen und geklebt werden.'
+    description: 'Natürliche und robuste Klötzchen in verschiedenen Holzarten, die je nach Bastelidee von mir gesägt, ' +
+        'geschliffen und geklebt werden.'
   },
   {
     title: 'Trockenblumen',
@@ -87,20 +128,15 @@ const categories: Array<Category> = [
         url: '/category_images/trockenblumen/blumen8.png'
       },
     ],
-    description: 'Mit verschiedenen Trockenblumen verschönere ich viele meiner Artikel oder binde kleine Sträuße für die Blumenmädchen. Ebenso sind die haltbaren Blumen ein toller Blickfang in den handgegossenen Vasen.'
+    description: 'Mit verschiedenen Trockenblumen verschönere ich viele meiner Artikel oder binde kleine Sträuße für ' +
+        'die Blumenmädchen. Ebenso sind die haltbaren Blumen ein toller Blickfang in den handgegossenen Vasen.'
   }
 ]
-
-defineProps({
-  loremText: {
-    type: String,
-    default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum nibh a lorem rutrum, sit amet euismod augue egestas. Aenean id condimentum justo, vel pharetra magna. Suspendisse a nunc ornare, tempus massa et, dignissim justo. Fusce est metus, rhoncus non luctus nec, porttitor vel quam."
-  }
-});
 </script>
 
 <template>
-  <section id="handmade" class="creator-linear-gradient">
+  <section id="portfolio" class="creator-linear-gradient">
+    <h1 class="section-header">Portfolio</h1>
     <div
          v-for="(category, categoryIndex) in categories"
          :key="category.title">
