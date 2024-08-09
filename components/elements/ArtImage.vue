@@ -2,9 +2,10 @@
 defineProps<{
   srcPath: string,
   title: string,
+  sizes: string
 }>();
 </script>
 
 <template>
-  <img class="object-cover object-center" :src="srcPath" :alt="title" />
+  <NuxtImg class="object-cover object-center" :sizes="sizes" :src="srcPath" :alt="title" placeholder/>
 </template>
