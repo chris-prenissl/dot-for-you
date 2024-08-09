@@ -6,7 +6,38 @@ const categories: Array<Category> = [
   {
     title: "Dotpainting",
     images: [
-
+      {
+        title: 'Dotpainting 1',
+        url: '/category_images/dotpainting/dotpainting1.png'
+      },
+      {
+        title: 'Dotpainting 2',
+        url: '/category_images/dotpainting/dotpainting2.png'
+      },
+      {
+        title: 'Dotpainting 3',
+        url: '/category_images/dotpainting/dotpainting3.png'
+      },
+      {
+        title: 'Dotpainting 4',
+        url: '/category_images/dotpainting/dotpainting4.png'
+      },
+      {
+        title: 'Dotpainting 5',
+        url: '/category_images/dotpainting/dotpainting5.png'
+      },
+      {
+        title: 'Dotpainting 6',
+        url: '/category_images/dotpainting/dotpainting6.png'
+      },
+      {
+        title: 'Dotpainting 7',
+        url: '/category_images/dotpainting/dotpainting7.png'
+      },
+      {
+        title: 'Dotpainting 8',
+        url: '/category_images/dotpainting/dotpainting8.png'
+      }
     ],
     description: "Punkt für Punkt kreiere ich mithilfe verschiedener Rundstäbchen kreative Mandalas und Muster auf " +
         "Keramik, Holz und anderen Materialien. Ich verwende dafür hochwertige Acryl - bzw. Keramikfarben, letztere sind " +
@@ -15,9 +46,30 @@ const categories: Array<Category> = [
   {
     title: "Gießpulver",
     images: [
-
+      {
+        title: 'Gießpulver 1',
+        url: '/category_images/giesspulver/giesspulver1.png'
+      },
+      {
+        title: 'Gießpulver 2',
+        url: '/category_images/giesspulver/giesspulver2.png'
+      },
+      {
+        title: 'Gießpulver 3',
+        url: '/category_images/giesspulver/giesspulver3.png'
+      },
+      {
+        title: 'Gießpulver 4',
+        url: '/category_images/giesspulver/giesspulver4.png'
+      },
+      {
+        title: 'Gießpulver 5',
+        url: '/category_images/giesspulver/giesspulver5.png'
+      }
     ],
-    description: ""
+    description: "Das hochwertige Reliefgießpulver rühre ich mit Wasser an und gieße es dann in Form. Nach der " +
+        "Trocknungszeit schleife und poliere ich die Figuren nach Bedarf. So entsteht zeitlose Deko, die mit Liebe von " +
+        "Hand hergestellt wird."
   },
   {
     title: "Plotten",
@@ -44,7 +96,7 @@ const categories: Array<Category> = [
         "meinen Artikeln ihr individuelles und personalisiertes Design."
   },
   {
-    title: 'Kerzen mit Motiven zu vielen Anlässen',
+    title: 'Kerzen',
     images: [
       {
         title: 'Kerze 1',
@@ -63,7 +115,8 @@ const categories: Array<Category> = [
         url: '/category_images/kerzen/kerze4.png'
       },
     ],
-    description: "* Stabkerzen -weiß 2,3/20 -farbig lang 2,2/18 -farbig kurz 2,2/10 (Farbauswahl je nach Vorrat)"
+    description: "Zu vielen Anlässen passend verziere ich Kerzen mit schönen Motiven. Mein Sortiment umfasst Stab- und " +
+        "Stumpenkerzen in verschiedenen Farben und Größen."
   },
   {
     title: 'Holzklötzchen',
@@ -138,8 +191,8 @@ const categories: Array<Category> = [
   <section id="portfolio" class="creator-linear-gradient">
     <h1 class="section-header">Portfolio</h1>
     <div
-         v-for="(category, categoryIndex) in categories"
-         :key="category.title">
+        v-for="(category, categoryIndex) in categories"
+        :key="category.title">
       <CategoryItem :grid-order="categoryIndex % 2" :category="category"/>
     </div>
   </section>
