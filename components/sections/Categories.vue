@@ -8,52 +8,86 @@ const categories: Array<Category> = [
     images: [
       {
         title: 'Kerze 1',
-        description: 'Kerze 1',
         url: '/category_images/kerzen/kerze1.png'
       },
       {
         title: 'Kerze 2',
-        description: 'Kerze 2',
         url: '/category_images/kerzen/kerze2.png'
       },
       {
         title: 'Kerze 3',
-        description: 'Kerze 3',
         url: '/category_images/kerzen/kerze3.png'
       },
       {
         title: 'Kerze 4',
-        description: 'Kerze 4',
         url: '/category_images/kerzen/kerze4.png'
       },
     ],
-    description: '- Stabkerzen'
+    description: "* Stabkerzen\n-weiß 2,3/20\n-farbig lang 2,2/18\n-farbig kurz 2,2/10\n(Farbauswahl je nach Vorrat)"
   },
   {
-    title: 'Kerzen mit Motiven zu vielen Anlässen',
+    title: 'Holzklötzchen',
     images: [
       {
-        title: 'Kerze 1',
-        description: 'Kerze 1',
-        url: '/category_images/kerzen/kerze1.png'
+        title: 'Klötzchen 1',
+        url: '/category_images/holzkloetzchen/kloetzchen1.png'
       },
       {
-        title: 'Kerze 2',
-        description: 'Kerze 2',
-        url: '/category_images/kerzen/kerze2.png'
+        title: 'Klötzchen 2',
+        url: '/category_images/holzkloetzchen/kloetzchen2.png'
       },
       {
-        title: 'Kerze 3',
-        description: 'Kerze 3',
-        url: '/category_images/kerzen/kerze3.png'
+        title: 'Klötzchen 3',
+        url: '/category_images/holzkloetzchen/kloetzchen3.png'
       },
       {
-        title: 'Kerze 4',
-        description: 'Kerze 4',
-        url: '/category_images/kerzen/kerze4.png'
+        title: 'Klötzchen 4',
+        url: '/category_images/holzkloetzchen/kloetzchen4.png'
+      },
+      {
+        title: 'Klötzchen 5',
+        url: '/category_images/holzkloetzchen/kloetzchen5.png'
+      }
+    ],
+    description: 'Natürliche und robuste Klötzchen in verschiedenen Holzarten, die je nach Bastelidee von mir gesägt, geschliffen und geklebt werden.'
+  },
+  {
+    title: 'Trockenblumen',
+    images: [
+      {
+        title: 'Blumen 1',
+        url: '/category_images/trockenblumen/blumen1.png'
+      },
+      {
+        title: 'Blumen 2',
+        url: '/category_images/trockenblumen/blumen2.png'
+      },
+      {
+        title: 'Blumen 3',
+        url: '/category_images/trockenblumen/blumen3.png'
+      },
+      {
+        title: 'Blumen 4',
+        url: '/category_images/trockenblumen/blumen4.png'
+      },
+      {
+        title: 'Blumen 5',
+        url: '/category_images/trockenblumen/blumen5.png'
+      },
+      {
+        title: 'Blumen 6',
+        url: '/category_images/trockenblumen/blumen6.png'
+      },
+      {
+        title: 'Blumen 7',
+        url: '/category_images/trockenblumen/blumen7.png'
+      },
+      {
+        title: 'Blumen 8',
+        url: '/category_images/trockenblumen/blumen8.png'
       },
     ],
-    description: '- Stabkerzen'
+    description: 'Mit verschiedenen Trockenblumen verschönere ich viele meiner Artikel oder binde kleine Sträuße für die Blumenmädchen. Ebenso sind die haltbaren Blumen ein toller Blickfang in den handgegossenen Vasen.'
   }
 ]
 
