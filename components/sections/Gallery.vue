@@ -26,7 +26,6 @@
 </template>
 
 <script>
-import StoryItem from "~/components/elements/StoryItem.vue";
 import GallerySlideItem from "~/components/elements/GallerySlideItem.vue";
 
 const titles = [
@@ -47,7 +46,7 @@ const imageUrls = [
   '/gallery_images/gallery_5.jpg'
 ];
 export default {
-  components: {GallerySlideItem, StoryItem},
+  components: {GallerySlideItem},
   data() {
     return {
       images: imageUrls.map((image, index) => ({
