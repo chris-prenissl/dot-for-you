@@ -10,8 +10,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="p-8 content-center">
-    <h1 class="text-3xl text-center py-16">{{ category.title }}</h1>
+  <div class="px-8 py-16 content-center">
     <div class="flex flex-col sm:flex-row">
       <CategoryTextBox class="order-last sm:-order-1" v-if="gridOrder === 0" :title="category.title"
                        :description="category.description" data-aos="fade-right"/>
