@@ -1,42 +1,40 @@
 <template>
-  <section id="gallery" class="flex flex-col justify-between items-center gap-2 sm:gap-4 gallery-radial-gradiant shadow-xl">
-    <h1 class="section-header">Galerie</h1>
-    <div class="w-dvw h-full max-w-screen-2xl px-2" data-aos="fade-right">
-      <Swiper
-          :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
-          :centered-slides="true"
-          :centered-slides-bounds="true"
-          :slides-per-view="1"
-          :loop="true"
-          :pagination="true"
-          :autoplay="true"
-          :navigation="{
+  <section id="gallery" class="gallery-radial-gradiant shadow-xl">
+    <h1 class="section-header p-8">Galerie</h1>
+    <Swiper class="w-full m-auto drop-shadow-lg"
+        :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
+        :centered-slides="true"
+        :centered-slides-bounds="true"
+        :slides-per-view="1"
+        :loop="true"
+        :pagination="true"
+        :autoplay="true"
+        :navigation="{
             enabled: true
           }"
-      >
-        <SwiperSlide
-            v-for="(image, index) in images"
-            :key="index">
-          <GallerySlideItem class="m-auto max-h-1080px w-auto" :title="image.title" :img-url="image.url" :description="image.description"/>
-        </SwiperSlide>
-      </Swiper>
-    </div>
-    <div/>
+    >
+      <SwiperSlide
+          v-for="(image, index) in images"
+          :key="index">
+        <ArtImage class="w-full max-h-svh sm:max-w-screen-md m-auto" :title="image.title" :src-path="image.url" img-sizes="100svw sm:100svw"/>
+      </SwiperSlide>
+    </Swiper>
   </section>
 </template>
 
 <script>
-import GallerySlideItem from "~/components/elements/GallerySlideItem.vue";
+
+import ArtImage from "~/components/elements/ArtImage.vue";
 
 const titles = [
-    'Muttertag',
-    'Vatertag',
-    'Taufe',
-    'Hochzeit',
-    'Weihnachten'
+  'Muttertag',
+  'Vatertag',
+  'Taufe',
+  'Hochzeit',
+  'Weihnachten'
 ];
 const descriptions = [
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus sapien vel dolor feugiat, non posuere ipsum facilisis. Morbi consectetur elementum mi ac semper. In et fermentum sem, at.'
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus sapien vel dolor feugiat, non posuere ipsum facilisis. Morbi consectetur elementum mi ac semper. In et fermentum sem, at.'
 ];
 const imageUrls = [
   '/gallery_images/gallery_1.jpg',
@@ -46,7 +44,7 @@ const imageUrls = [
   '/gallery_images/gallery_5.jpg'
 ];
 export default {
-  components: {GallerySlideItem},
+  components: {ArtImage},
   data() {
     return {
       images: imageUrls.map((image, index) => ({
@@ -92,7 +90,8 @@ export default {
 .swiper-button-next {
   color: grey;
 }
+
 .gallery-radial-gradiant {
-  background: radial-gradient(circle,#f7d3df 10%, #f9f9f9);
+  background: radial-gradient(circle, #f7d3df 10%, #f9f9f9);
 }
 </style>

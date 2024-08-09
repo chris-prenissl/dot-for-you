@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <Swiper class="w-full h-1/2 sm:w-1/2 sm:h-1/2 m-auto drop-shadow-lg"
+  <Swiper class="w-full sm:w-1/2 m-auto drop-shadow-lg"
           :modules="[SwiperAutoplay, SwiperEffectFade]"
           :effect="'fade'"
           :delay="200"
@@ -26,7 +26,7 @@ defineProps<{
     <SwiperSlide
         v-for="(image, index) in category.images"
         :key="index">
-      <ArtImage  :src-path="image.url" :title="image.title"/>
+      <ArtImage class="w-full" :src-path="image.url" :title="image.title" img-sizes="100svw sm:50svw"/>
     </SwiperSlide>
   </Swiper>
 </template>
