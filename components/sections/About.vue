@@ -1,7 +1,7 @@
 <template>
-  <section id="about" class="about-linear-gradient backdrop-blur flex flex-wrap items-center justify-center gap-8">
-    <img data-aos="fade-right" class="sm:w-40svh md:max-w-screen-lg border-8 content-center object-cover shadow-2xl" src="/public/melanie/melanie.jpg" alt="Melanie" />
-    <div data-aos="fade-left" class="sm:w-40svh md:max-w-screen-lg p-2 sm:p-4 md:p-16 rounded-l backdrop-blur-2xl shadow-xl">
+  <section id="about" class="about-linear-gradient backdrop-blur flex flex-wrap items-center justify-center">
+    <NuxtImg data-aos="fade-right" class="h-auto sm:w-40svw md:max-w-screen-md border-8 content-center object-cover shadow-2xl" src="/melanie/melanie.jpg" alt="Melanie" sizes="100svw sm:100svw"/>
+    <div data-aos="fade-left" class="md:max-w-screen-lg p-2 sm:p-4 md:p-16 rounded-l backdrop-blur-2xl shadow-2xl border-2 border-primary">
       <h2 class="p-2 sm:p4 text-4xl font-bold">Melanie</h2>
       <p class="p-2 sm:p4 md:text-lg md:max-w-screen-l text-justify text-text_on_primary border-dotted">Mein Name ist Melanie Zimmer und ich wohne zusammen mit meinem Mann und unseren
         drei Katzen in Burglengenfeld. Hauptberuflich arbeite ich als allgemeinbildende Lehrerin an einer
@@ -17,6 +17,6 @@
 .about-linear-gradient {
   background-size: cover !important;
   backdrop-filter: blur(10px);
-  background: linear-gradient(to bottom, rgba(247, 211, 223, 0.85) 0%, rgba(249, 249, 249, 0.94) 100%), url("/public/melanie/melanie_bg.png") no-repeat center;
+  background: linear-gradient(to top, rgba(247, 211, 223, 1), rgba(249, 249, 249, 1));
 }
 </style>
