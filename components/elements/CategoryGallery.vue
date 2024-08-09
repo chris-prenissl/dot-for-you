@@ -9,13 +9,19 @@ defineProps<{
 
 <template>
   <Swiper class="h-1/2 max-w-full sm:w-1/2 drop-shadow-lg"
-          :modules="[SwiperAutoplay]"
+          :modules="[SwiperAutoplay, SwiperEffectFade]"
+          :effect="'fade'"
+          :delay="200"
+          :speed="2000"
+          :fade-effect="{
+            crossFade: true
+          }"
           :centered-slides="true"
           :centered-slides-bounds="true"
           :slides-per-view="1"
           :loop="true"
           :autoplay="true"
-          :navigation="false"
+          :allow-touch-move="false"
   >
     <SwiperSlide
         v-for="(image, index) in category.images"
