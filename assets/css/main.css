@@ -71,6 +71,16 @@
         }
     }
 
+    .w-40svw {
+        width: 40svw;
+    }
+
+    .sm\:w-40svw {
+        @media (min-width: 768px) {
+            width: 40svw;
+        }
+    }
+
     .md\:w-40svh {
         @media (min-width: 768px) {
             width: 40svw;

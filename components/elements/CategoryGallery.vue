@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <Swiper class="h-1/2 max-w-full sm:w-1/2 drop-shadow-lg"
+  <Swiper class="w-full h-1/2 sm:w-1/2 sm:h-1/2 m-auto drop-shadow-lg"
           :modules="[SwiperAutoplay, SwiperEffectFade]"
           :effect="'fade'"
           :delay="200"
