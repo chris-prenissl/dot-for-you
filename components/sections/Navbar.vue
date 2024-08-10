@@ -33,18 +33,16 @@ function onToggleMenu(): void {
       <nav :class="!menuOpen ? 'hidden' : ''" class="w-full sm:w-auto text-nowrap p-8 sm:block">
         <ul aria-label="Primary" class="text-2xl sm:text-lg flex text-right flex-col sm:flex-row gap-2 sm:gap-8">
           <li>
-            <a @click="closeMenu" class="text-logo_text hover:text-text_on_primary" :href="'#'">
-              <div class="w-full">Handmade</div>
-            </a>
+            <NuxtLink @click="closeMenu" class="text-logo_text hover:text-text_on_primary" to="/">Handmade</NuxtLink>
           </li>
           <li>
-            <a @click="closeMenu" class="hover:text-logo_text" :href="'#portfolio'">Portfolio</a>
+            <NuxtLink @click="closeMenu" class="hover:text-logo_text" href="#portfolio">Portfolio</NuxtLink>
           </li>
           <li>
-            <a @click="closeMenu" class="hover:text-logo_text" :href="'#about'">About Me</a>
+            <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#about">About Me</NuxtLink>
           </li>
           <li>
-            <a @click="closeMenu" class="hover:text-logo_text" :href="'#contact'">Kontakt</a>
+            <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#contact">Kontakt</NuxtLink>
           </li>
         </ul>
       </nav>
