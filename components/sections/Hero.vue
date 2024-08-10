@@ -12,8 +12,8 @@ const backgroundImage = computed(() => {
 
 <template>
   <section id="hero" :style="backgroundImage" class="content-center bg-cover bg-center z-40">
-    <div id="hero-element" class="max-w-screen-md p-4 mt-32 sm:m-auto sm:p-10 rounded-sm border border-primary">
-      <h1 class="text-2xl sm:text-3xl font-bold text-light_white pb-4">Mit Liebe handgemacht</h1>
+    <div id="hero-element" class="max-w-screen-md p-4 mt-32 sm:m-auto sm:p-10 rounded-sm">
+      <h1 class="text-2xl sm:text-4xl font-bold text-light_white pb-4">Mit Liebe.<br/>handgemacht.</h1>
       <p class="sm:text-2xl text-light_white mb-8">
         Aus einer Vielzahl an Materialien gestalte ich individuelle Dekorationen, Geschenke und Mitbringsel.
         In meinem Sortiment findest du einzelne Artikel, Komplettsets sowie personalisierte Designs nach deinen
