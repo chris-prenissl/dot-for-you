@@ -1,10 +1,17 @@
 <script setup lang="ts">
-import ButtonAnchorSecondary from "~/components/elements/ButtonAnchorSecondary.vue";
 import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
+import ButtonAnchorSecondary from "~/components/elements/ButtonAnchorSecondary.vue";
+
+const image = useImage();
+const backgroundImage = computed(() => {
+  const imgUrl = image('/melanie/melanie_bg.png', {format: 'webp', sizes: 'sm:40svw lg:10svw'})
+  return { backgroundImage: `url('${imgUrl}')` }
+})
+
 </script>
 
 <template>
-  <section id="hero" class="hero-background-img content-center bg-cover bg-center z-40">
+  <section id="hero" :style="backgroundImage" class="content-center bg-cover bg-center z-40">
     <div id="hero-element" class="max-w-screen-md p-4 mt-32 sm:m-auto sm:p-10 rounded-sm border border-primary">
       <h1 class="text-2xl sm:text-3xl font-bold text-light_white pb-4">Mit Liebe handgemacht</h1>
       <p class="sm:text-2xl text-light_white mb-8">
@@ -23,9 +30,5 @@ import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
 <style scoped>
 #hero {
   min-height: calc(100svh + 6rem);
-}
-
-.hero-background-img {
-  background-image: url('public/melanie/melanie_bg.png');
 }
 </style>
