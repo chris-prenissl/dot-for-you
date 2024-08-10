@@ -16,9 +16,9 @@ function onToggleMenu(): void {
   <header :class="menuOpen ? 'h-auto' : ''" class="h-24 w-full nav-radial-gradiant bg-primary fixed top-0 z-50 shadow">
     <div :class="menuOpen ? 'flex-wrap' : '' "
          class="max-w-screen-lg mx-auto flex sm:flex-nowrap items-center justify-between p-2">
-      <a id="logo" href="#" class="cursor-pointer">
+      <NuxtLink class="cursor-pointer" id="logo" to="/" @click="closeMenu">
         <Logo class="h-18 sm:w-auto"/>
-      </a>
+      </NuxtLink>
       <input @input="onToggleMenu" id="navbar-open" class="peer hidden" type="checkbox"/>
       <label class="p-2 mt-2 cursor-pointer sm:hidden" for="navbar-open">
         <span class="sr-only">Toggle Navigation</span>
