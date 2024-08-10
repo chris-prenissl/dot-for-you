@@ -2,7 +2,6 @@
 import Logo from "~/components/svgs/Logo.vue";
 
 const menuOpen = ref(false);
-const heroIntersection = ref(false);
 
 function closeMenu() {
   menuOpen.value = false;
@@ -11,16 +10,6 @@ function closeMenu() {
 function onToggleMenu(): void {
   menuOpen.value = !menuOpen.value;
 }
-
-onMounted(() => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      heroIntersection.value = entry.isIntersecting;
-    })
-  })
-  const logo = document.getElementById('hero-element')!;
-  observer.observe(logo);
-});
 </script>
 
 <template>
