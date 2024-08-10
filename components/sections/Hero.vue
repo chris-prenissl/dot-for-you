@@ -5,9 +5,9 @@ import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
 
 <template>
   <section id="hero" class="hero-background-img content-center bg-cover bg-center z-40">
-    <div id="hero-element" class="max-w-screen-md p-4 sm:p-10 m-auto rounded-sm border border-primary">
-      <h1 class="text-4xl font-bold text-light_white mb-8">Mit Liebe handgemacht</h1>
-      <p class="text-xl sm:text-2xl text-light_white mb-8">
+    <div id="hero-element" class="max-w-screen-md p-4 mt-32 sm:m-auto sm:p-10 rounded-sm border border-primary">
+      <h1 class="text-2xl sm:text-3xl font-bold text-light_white pb-4">Mit Liebe handgemacht</h1>
+      <p class="sm:text-2xl text-light_white mb-8">
         Aus einer Vielzahl an Materialien gestalte ich individuelle Dekorationen, Geschenke und Mitbringsel.
         In meinem Sortiment findest du einzelne Artikel, Komplettsets sowie personalisierte Designs nach deinen
         Wünschen.
@@ -22,7 +22,7 @@ import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
 
 <style scoped>
 #hero {
-  min-height: calc(100svh - 6rem);
+  min-height: calc(100svh + 6rem);
 }
 
 .hero-background-img {
