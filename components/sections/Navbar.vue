@@ -16,7 +16,7 @@ function onToggleMenu(): void {
   <header :class="menuOpen ? 'h-auto' : ''" class="h-24 w-full nav-radial-gradiant bg-primary fixed top-0 z-50 shadow">
     <div :class="menuOpen ? 'flex-wrap' : '' "
          class="max-w-screen-lg mx-auto flex sm:flex-nowrap items-center justify-between p-2">
-      <NuxtLink class="cursor-pointer" id="logo" to="#" @click="closeMenu">
+      <NuxtLink class="cursor-pointer" id="logo" to="/" @click="closeMenu">
         <Logo class="h-18 sm:w-auto"/>
       </NuxtLink>
       <input @input="onToggleMenu" id="navbar-open" class="peer hidden" type="checkbox"/>
@@ -33,10 +33,13 @@ function onToggleMenu(): void {
       <nav :class="!menuOpen ? 'hidden' : ''" class="w-full sm:w-auto text-nowrap p-8 sm:block">
         <ul aria-label="Primary" class="text-2xl sm:text-lg flex text-right flex-col sm:flex-row gap-2 sm:gap-8">
           <li>
-            <NuxtLink @click="closeMenu" class="text-logo_text hover:text-text_on_primary" to="#">Home</NuxtLink>
+            <NuxtLink @click="closeMenu" class="text-logo_text hover:text-text_on_primary" to="/">Home</NuxtLink>
           </li>
           <li>
-            <NuxtLink @click="closeMenu" class="hover:text-logo_text" href="#portfolio">Portfolio</NuxtLink>
+            <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#gallery">Galerie</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#portfolio">Portfolio</NuxtLink>
           </li>
           <li>
             <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#about">About Me</NuxtLink>

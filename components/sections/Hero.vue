@@ -11,7 +11,7 @@ const backgroundImage = computed(() => {
 </script>
 
 <template>
-  <section id="hero" :style="backgroundImage" class="content-center bg-cover bg-center z-40">
+  <section id="hero" :style="backgroundImage" class="content-center bg-cover bg-center z-10">
     <div id="hero-element" class="max-w-screen-md p-4 mt-32 sm:m-auto sm:p-10 rounded-sm">
       <h1 class="text-2xl sm:text-4xl font-bold text-light_white pb-4">Mit Liebe.<br/>handgemacht.</h1>
       <p class="sm:text-2xl text-light_white mb-8">
@@ -20,7 +20,7 @@ const backgroundImage = computed(() => {
         In meinem Sortiment findest du einzelne Artikel, Komplettsets sowie personalisierte Designs nach deinen
         Wünschen.
       </p>
-      <div class="flex flex-col sm:flex-row flex-wrap gap-8 sm:gap-32">
+      <div class="flex flex-col sm:flex-row flex-wrap gap-2">
         <ButtonAnchorPrimary title="Zum WhatsApp Shop" path="https://wa.me/c/491637917232"/>
         <ButtonAnchorSecondary title="Kontakt" path="#contact"/>
       </div>

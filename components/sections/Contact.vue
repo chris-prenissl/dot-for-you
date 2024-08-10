@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="m-auto flex flex-col bg-primary text-light_text z-10">
+  <section id="contact" class="m-auto flex flex-col bg-primary text-light_text z-6">
     <h1 class="section-header text-text_on_primary">Kontakt</h1>
     <div class="m-auto flex flex-col justify-evenly py-2 sm:py-8">
       <div class="flex flex-col items-start flex-wrap md:flex-row md:items-center px-16 py-2 sm:py-16 gap-1 sm:gap-6">

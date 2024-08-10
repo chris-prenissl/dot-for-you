@@ -46,7 +46,7 @@ const categories: Array<Category> = [
 </script>
 
 <template>
-  <section id="portfolio" class="creator-linear-gradient z-30">
+  <section id="portfolio" class="creator-linear-gradient z-8">
     <h1 class="section-header">Portfolio</h1>
     <div class="category-min-h"
         v-for="(category, categoryIndex) in categories"
@@ -58,7 +58,7 @@ const categories: Array<Category> = [
 
 <style scoped>
 .creator-linear-gradient {
-  background: radial-gradient(circle, #f7d3df 0%, #f9f9f9);
+  background: radial-gradient(circle, #F6E6EEFF 0%, #f9f9f9);
 }
 
 .category-min-h {

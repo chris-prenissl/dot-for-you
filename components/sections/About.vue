@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="about-linear-gradient backdrop-blur flex flex-wrap items-center justify-center z-20">
+  <section id="about" class="about-linear-gradient backdrop-blur flex flex-wrap items-center justify-center z-7">
     <NuxtImg data-aos="fade-right" class="w-full h-auto sm:w-1/2 md:max-w-screen-md border-8 content-center object-cover shadow-2xl" src="/melanie/melanie.jpg" format="webp"  sizes="sm:40svw lg:100svw" loading="lazy" placeholder alt="Melanie"/>
     <div data-aos="fade-left" class="sm:max-w-screen-lg p-2 sm:p-4 bg-light_white bg-opacity-50 rounded-l backdrop-blur-2xl shadow-2xl border-2 border-primary">
       <h2 class="pb-2 text-4xl font-bold">About Me</h2>
