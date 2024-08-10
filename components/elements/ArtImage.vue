@@ -7,5 +7,5 @@ defineProps<{
 </script>
 
 <template>
-  <NuxtImg class="object-cover object-center" :sizes="imgSizes" :src="srcPath" loading="lazy" placeholder="true" :alt="title"/>
+  <NuxtImg class="object-cover object-center" :sizes="imgSizes" :src="srcPath" loading="lazy" placeholder :alt="title"/>
 </template>
