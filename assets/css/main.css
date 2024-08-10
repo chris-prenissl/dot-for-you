@@ -11,14 +11,15 @@
 }
 
 @layer utilities {
-    body {
-        padding-top: 6rem;
+    html {
+        scroll-behavior: smooth;
     }
 
     section {
+        position: relative;
         min-height: calc(100svh - 6rem);
         margin-top: -6rem;
-        padding-top: 6rem;
+        padding-top: 12rem;
         padding-left: 1rem;
         padding-right: 1rem;
         @media (min-width: 768px) {

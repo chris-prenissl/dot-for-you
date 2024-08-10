@@ -188,7 +188,7 @@ const categories: Array<Category> = [
 </script>
 
 <template>
-  <section id="portfolio" class="creator-linear-gradient">
+  <section id="portfolio" class="creator-linear-gradient z-30">
     <h1 class="section-header">Portfolio</h1>
     <div
         v-for="(category, categoryIndex) in categories"

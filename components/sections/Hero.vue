@@ -4,7 +4,7 @@ import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
 </script>
 
 <template>
-  <section id="hero" class="hero-background-img content-center bg-cover bg-center">
+  <section id="hero" class="hero-background-img content-center bg-cover bg-center z-40">
     <div id="hero-element" class="max-w-screen-md p-4 sm:p-10 m-auto rounded-sm border border-primary">
       <h1 class="text-4xl font-bold text-light_white mb-8">Mit Liebe handgemacht</h1>
       <p class="text-xl sm:text-2xl text-light_white mb-8">

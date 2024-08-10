@@ -24,7 +24,7 @@ defineProps<{
     <SwiperSlide
         v-for="(image, index) in category.images"
         :key="index">
-      <ArtImage class="w-full" :src-path="image.url" :title="image.title" img-sizes="100svw sm:50svw"/>
+      <ArtImage class="w-full" :src-path="image.url" :title="image.title" img-sizes="100svw sm:100svw"/>
     </SwiperSlide>
   </Swiper>
 </template>
