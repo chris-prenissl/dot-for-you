@@ -142,8 +142,8 @@ const categories: Array<Category> = [
         url: '/category_images/holzkloetzchen/kloetzchen5.png'
       }
     ],
-    description: 'Natürliche und robuste Klötzchen in verschiedenen Holzarten, die je nach Bastelidee von mir gesägt, ' +
-        'geschliffen und geklebt werden.'
+    description: 'Die natürlichen und robusten Klötzchen in verschiedenen Holzarten liegen voll im Trend. Das Holz ' +
+        'wird je nach Bastelidee von mir gesägt, geschliffen und geklebt.'
   },
   {
     title: 'Trockenblumen',
@@ -190,7 +190,7 @@ const categories: Array<Category> = [
 <template>
   <section id="portfolio" class="creator-linear-gradient z-30">
     <h1 class="section-header">Portfolio</h1>
-    <div
+    <div class="category-min-h"
         v-for="(category, categoryIndex) in categories"
         :key="category.title">
       <CategoryItem :grid-order="categoryIndex % 2" :category="category"/>
@@ -201,5 +201,9 @@ const categories: Array<Category> = [
 <style scoped>
 .creator-linear-gradient {
   background: radial-gradient(circle, #f7d3df 0%, #f9f9f9);
+}
+
+.category-min-h {
+  min-height: calc(100svh - 6rem);
 }
 </style>
