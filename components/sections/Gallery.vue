@@ -10,7 +10,7 @@ function shuffleArray<T>(array: T[]) {
 }
 
 const images: Array<GalleryImage> = [];
-for (let i = 1; i <= 27; i++) {
+for (let i = 1; i <= 31; i++) {
   images.push({
     title: "Galeriebild " + i,
     url: "/gallery_images/gallery_img - " + i + ".png"
@@ -20,7 +20,19 @@ shuffleArray(images);
 </script>
 
 <template>
-  <section id="gallery" class="content-center z-9">
+  <section id="gallery" class="min-h-svh z-9">
+    <div class="h-96 w-96 m-auto text-sm ankuendigungen-bg text-center content-center bg-center bg-contain bg-no-repeat">
+      <div class="m-auto p-16 -rotate-3">
+        <h2 class="pb-2 text-lg">Ankündigungen</h2>
+        <h3 class="underline">Markttermine</h3>
+        <ul>
+          <li>07.12.24 - Weihnachtsmarkt, 93183 Kallmünz</li>
+          <li>02.11.24 - Kreativmarkt, 93192 Wald</li>
+        </ul>
+        <h3 class="underline">VHS Schwandorf</h3>
+        <p>Kurse Dotpainting für Kinder und Erwachsene.<br/>Siehe Herbst-/Winderprogramm 24/25</p>
+      </div>
+    </div>
     <Swiper class="w-full m-auto drop-shadow-lg"
             :modules="[SwiperAutoplay, SwiperNavigation, SwiperPagination]"
             :autoplay="{delay: 2000}"
@@ -43,6 +55,10 @@ shuffleArray(images);
 </template>
 
 <style>
+.ankuendigungen-bg {
+  background-image: url("/ankuendingungen_bg.png");
+}
+
 .swiper-pagination-bullet {
   background: grey !important;
 }
