@@ -17,11 +17,19 @@ for (let i = 1; i <= 31; i++) {
   });
 }
 shuffleArray(images);
+
+const image = useImage();
+const backgroundImage = computed(() => {
+  const imgUrl = image('/ankuendingungen_bg.png', {format: 'webp', sizes: 'sm:40svw lg:10svw'})
+  return {backgroundImage: `url('${imgUrl}')`}
+})
+
 </script>
 
 <template>
   <section id="gallery" class="min-h-svh z-9">
-    <div class="h-96 w-96 m-auto text-sm ankuendigungen-bg text-center content-center bg-center bg-contain bg-no-repeat">
+    <div class="h-96 w-96 m-auto text-sm text-center content-center bg-center bg-contain bg-no-repeat"
+         :style="backgroundImage">
       <div class="m-auto p-16 -rotate-3">
         <h2 class="pb-2 text-lg">Ankündigungen</h2>
         <h3 class="underline">Markttermine</h3>
@@ -55,10 +63,6 @@ shuffleArray(images);
 </template>
 
 <style>
-.ankuendigungen-bg {
-  background-image: url("/ankuendingungen_bg.png");
-}
-
 .swiper-pagination-bullet {
   background: grey !important;
 }
@@ -91,7 +95,8 @@ shuffleArray(images);
 .swiper-button-next {
   color: grey;
 }
+
 .gallery-radial-gradiant {
-  background: radial-gradient(circle,#f7d3df 10%, #f9f9f9);
+  background: radial-gradient(circle, #f7d3df 10%, #f9f9f9);
 }
 </style>

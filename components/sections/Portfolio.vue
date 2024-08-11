@@ -47,7 +47,7 @@ const categories: Array<Category> = [
 </script>
 
 <template>
-  <section id="portfolio" class="min-h-svh creator-linear-gradient z-8">
+  <section id="portfolio" class="portfolio-min-h creator-linear-gradient z-8">
     <h1 class="section-header">Portfolio</h1>
     <div
         v-for="(category, categoryIndex) in categories"
@@ -62,7 +62,7 @@ const categories: Array<Category> = [
   background: radial-gradient(circle, #F6E6EEFF 0%, #f9f9f9);
 }
 
-.category-min-h {
+.portfolio-min-h {
   min-height: calc(100svh - 6rem);
 }
 </style>
