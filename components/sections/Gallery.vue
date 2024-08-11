@@ -47,7 +47,6 @@ const backgroundImage = computed(() => {
             :centered-slides="true"
             :centered-slides-bounds="true"
             :slides-per-view="3"
-            :space-between="30"
             :loop="true"
             :navigation="{
             enabled: true
@@ -56,7 +55,7 @@ const backgroundImage = computed(() => {
       <SwiperSlide
           v-for="(image, index) in images"
           :key="index">
-        <ArtImage class="w-full" :src-path="image.url" :title="image.title" img-sizes="sm:40svw md:100svw"/>
+        <ArtImage class="w-full px-2" :src-path="image.url" :title="image.title" img-sizes="sm:40svw md:100svw"/>
       </SwiperSlide>
     </Swiper>
   </section>
