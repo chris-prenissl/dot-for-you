@@ -38,7 +38,7 @@ const backgroundImage = computed(() => {
           <li>02.11.24 - Kreativmarkt, 93192 Wald</li>
         </ul>
         <h3 class="underline">VHS Schwandorf</h3>
-        <p>Kurse Dotpainting für Kinder und Erwachsene.<br/>Siehe Herbst-/Winderprogramm 24/25</p>
+        <p>Kurse Dotpainting für Kinder und Erwachsene.<br/>Siehe Herbst-/Winterprogramm 24/25</p>
       </div>
     </div>
     <Swiper class="w-full m-auto drop-shadow-lg"
