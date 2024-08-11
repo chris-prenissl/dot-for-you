@@ -17,7 +17,7 @@ const backgroundImage = computed(() => {
       <p class="sm:text-2xl text-light_white mb-8">
         Willkommen bei DotForYou - bei mir findest du kreative und handgemachte Schätze zu vielen Anlässen.
         Aus einer Vielzahl an Materialien gestalte ich individuelle Dekorationen, Geschenke und Mitbringsel.
-        In meinem Sortiment findest du einzelne Artikel, Komplettsets sowie personalisierte Designs nach deinen
+        Mein Sortiment beinhaltet einzelne Artikel, Komplettsets sowie personalisierte Designs nach deinen
         Wünschen.
       </p>
       <div class="flex flex-col sm:flex-row flex-wrap gap-2">
