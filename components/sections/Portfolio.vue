@@ -34,7 +34,8 @@ const categories: Array<Category> = [
     title: 'Holzklötzchen',
     coverImgUrl: '/category_images/kloetzchen_cover.png',
     description: 'Die natürlichen und robusten Klötzchen in verschiedenen Holzarten liegen voll im Trend. Das Holz ' +
-        'wird je nach Bastelidee von mir gesägt, geschliffen und geklebt.'
+        'wird je nach Bastelidee von mir gesägt, geschliffen und geklebt. Gerne verwende ich die Holzklötzchen als ' +
+        'Alternative zu Folienverpackungen.'
   },
   {
     title: 'Trockenblumen',
@@ -46,9 +47,9 @@ const categories: Array<Category> = [
 </script>
 
 <template>
-  <section id="portfolio" class="creator-linear-gradient z-8">
+  <section id="portfolio" class="min-h-svh creator-linear-gradient z-8">
     <h1 class="section-header">Portfolio</h1>
-    <div class="category-min-h"
+    <div
         v-for="(category, categoryIndex) in categories"
         :key="category.title">
       <CategoryItem :grid-order="categoryIndex % 2" :category="category"/>
