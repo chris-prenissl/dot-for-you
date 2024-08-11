@@ -90,7 +90,7 @@
         height: 50svh;
     }
 
-    .md\:h-50svh {
+    .sm\:h-50svh {
         @media (min-width: 768px) {
             height: 50svh;
         }

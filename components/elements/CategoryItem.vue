@@ -14,7 +14,7 @@ defineProps<{
     <div class="sm:max-w-screen-xl flex flex-col sm:flex-row m-auto">
       <CategoryTextBox class="order-last sm:-order-1" v-if="gridOrder === 0" :title="category.title" :background-url="category.coverImgUrl"
                        :description="category.description" data-aos="fade-right"/>
-      <ArtImage class="w-full sm:w-1/2" :src-path="category.coverImgUrl" :title="category.title" img-sizes="sm:40svw lg:100svw" :data-aos="gridOrder === 0 ? 'fade-left' : 'fade-right'"/>
+      <ArtImage class="w-full h-40svh sm:w-1/2 sm:h-50svh" :src-path="category.coverImgUrl" :title="category.title" img-sizes="sm:40svw lg:100svw" :data-aos="gridOrder === 0 ? 'fade-left' : 'fade-right'"/>
       <CategoryTextBox  v-if="gridOrder === 1" :title="category.title" :description="category.description"
                        data-aos="fade-left" :background-url="category.coverImgUrl"/>
     </div>
