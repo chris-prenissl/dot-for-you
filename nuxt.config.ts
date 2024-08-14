@@ -21,7 +21,7 @@ export default defineNuxtConfig({
                 { name: 'description', content: 'Mit Liebe. handgemacht.' }
             ],
             link: [
-                { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+                { rel: 'shortcut icon', href: '/favicon.ico' }
             ]
         },
 
