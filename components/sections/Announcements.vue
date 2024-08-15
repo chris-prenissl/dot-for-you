@@ -7,7 +7,7 @@ const backgroundImage = computed(() => {
 </script>
 
 <template>
-<section id="announcements" class="min-h-min z-10">
+<section id="announcements" class="min-h-min z-9">
   <div class="h-96 w-96 m-auto text-sm text-center content-center bg-center bg-contain bg-no-repeat"
        :style="backgroundImage">
     <div class="m-auto p-16 -rotate-3">

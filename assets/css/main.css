@@ -58,6 +58,10 @@
         z-index: 5;
     }
 
+    .z-4 {
+        z-index: 4;
+    }
+
     .m-inline {
         margin-inline: auto;
     }
