@@ -24,6 +24,20 @@ const backgroundImage = computed(() => {
   return {backgroundImage: `url('${imgUrl}')`}
 })
 
+let windowWidth = ref(0);
+
+function onResize() {
+  windowWidth.value = window.innerWidth
+}
+
+onMounted(() => {
+  window.addEventListener('resize', onResize);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', onResize);
+});
+
 </script>
 
 <template>
@@ -46,7 +60,7 @@ const backgroundImage = computed(() => {
             :autoplay="{delay: 2000}"
             :centered-slides="true"
             :centered-slides-bounds="true"
-            :slides-per-view="3"
+            :slides-per-view="windowWidth > 768 ? 3 : 1"
             :loop="true"
             :navigation="{
             enabled: true
