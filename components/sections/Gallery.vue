@@ -20,10 +20,11 @@ shuffleArray(images);
 
 let windowWidth = ref(0);
 function onResize() {
-  windowWidth.value = window.innerWidth
+  windowWidth.value = window.innerWidth;
 }
 
 onMounted(() => {
+  windowWidth.value = window.innerWidth;
   window.addEventListener('resize', onResize);
 });
 
