@@ -7,6 +7,7 @@ import Footer from "~/components/sections/Footer.vue";
 import Portfolio from "~/components/sections/Portfolio.vue";
 import CookieDialog from "~/components/elements/CookieDialog.vue";
 import Gallery from "~/components/sections/Gallery.vue";
+import Announcements from "~/components/sections/Announcements.vue";
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import Gallery from "~/components/sections/Gallery.vue";
     <Navbar/>
     <main class="min-w-60">
       <Hero/>
+      <Announcements/>
       <Gallery/>
       <Portfolio/>
       <About/>
