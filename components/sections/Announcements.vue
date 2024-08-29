@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const image = useImage();
 const backgroundImage = computed(() => {
-  const imgUrl = image('/ankuendingungen_bg.png', {format: 'webp', sizes: 'sm:50svw lg:10svw'})
+  const imgUrl = image('/ankuendingungen_bg.png', {format: 'webp', sizes: 'sm:30svw lg:10svw'})
   return {
     backgroundImage: `url('${imgUrl}')`
   }

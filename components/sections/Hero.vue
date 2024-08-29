@@ -4,7 +4,7 @@ import ButtonAnchorSecondary from "~/components/elements/ButtonAnchorSecondary.v
 
 const image = useImage();
 const backgroundImage = computed(() => {
-  const imgUrl = image('/melanie/melanie_bg.png', {format: 'webp', sizes: 'sm:40svw lg:10svw'})
+  const imgUrl = image('/melanie/melanie_bg.png', {format: 'webp', sizes: 'sm:30svw lg:10svw'})
   return { backgroundImage: `url('${imgUrl}')` }
 })
 
