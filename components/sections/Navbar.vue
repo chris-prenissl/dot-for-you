@@ -15,12 +15,12 @@ function onToggleMenu(): void {
 <template>
   <header :class="menuOpen ? 'h-auto' : ''" class="h-24 w-full nav-radial-gradiant bg-primary fixed top-0 z-50 shadow">
     <div :class="menuOpen ? 'flex-wrap' : '' "
-         class="max-w-screen-lg mx-auto flex sm:flex-nowrap items-center justify-between p-2">
+         class="max-w-screen-lg mx-auto flex md:flex-nowrap items-center justify-between p-2">
       <NuxtLink class="cursor-pointer" id="logo" to="/" @click="closeMenu">
-        <Logo class="h-18 sm:w-auto"/>
+        <Logo class="h-18 md:w-auto"/>
       </NuxtLink>
       <input @input="onToggleMenu" id="navbar-open" class="peer hidden" type="checkbox"/>
-      <label class="p-2 mt-2 cursor-pointer sm:hidden" for="navbar-open">
+      <label class="p-2 mt-2 cursor-pointer md:hidden" for="navbar-open">
         <span class="sr-only">Toggle Navigation</span>
         <svg v-if="!menuOpen" xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em"
              preserveAspectRatio="xMidYMid meet"
@@ -30,8 +30,8 @@ function onToggleMenu(): void {
         </svg>
         <span v-else class="font-light">✖️</span>
       </label>
-      <nav :class="!menuOpen ? 'hidden' : ''" class="w-full sm:w-auto text-nowrap p-8 sm:block">
-        <ul aria-label="Primary" class="text-2xl sm:text-lg flex text-right flex-col sm:flex-row gap-2 sm:gap-8">
+      <nav :class="!menuOpen ? 'hidden' : ''" class="w-full md:w-auto text-nowrap p-8 md:block">
+        <ul aria-label="Primary" class="text-2xl md:text-lg flex text-right flex-col md:flex-row gap-2 md:gap-8">
           <li>
             <NuxtLink @click="closeMenu" class="text-logo_text hover:text-text_on_primary" to="/">Home</NuxtLink>
           </li>

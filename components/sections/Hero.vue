@@ -12,15 +12,15 @@ const backgroundImage = computed(() => {
 
 <template>
   <section id="hero" :style="backgroundImage" class="content-center bg-cover bg-center z-10">
-    <div id="hero-element" class="max-w-screen-md p-4 mt-32 sm:m-auto sm:p-10 rounded-sm">
-      <h1 class="text-2xl sm:text-4xl font-bold text-light_white pb-4">Mit Liebe.<br/>handgemacht.</h1>
-      <p class="sm:text-2xl text-light_white mb-8">
+    <div id="hero-element" class="max-w-screen-md p-4 mt-32 md:m-auto md:p-10 rounded-sm">
+      <h1 class="text-2xl md:text-4xl font-bold text-light_white pb-4">Mit Liebe.<br/>handgemacht.</h1>
+      <p class="md:text-2xl text-light_white mb-8">
         Willkommen bei DotForYou - bei mir findest du kreative und handgemachte Schätze zu vielen Anlässen.
         Aus einer Vielzahl an Materialien gestalte ich individuelle Dekorationen, Geschenke und Mitbringsel.
         Mein Sortiment beinhaltet einzelne Artikel, Komplettsets sowie personalisierte Designs nach deinen
         Wünschen.
       </p>
-      <div class="flex flex-col sm:flex-row flex-wrap gap-2">
+      <div class="flex flex-col md:flex-row flex-wrap gap-2">
         <ButtonAnchorPrimary title="Zum WhatsApp Shop" path="https://wa.me/c/491637917232"/>
         <ButtonAnchorSecondary title="Kontakt" path="#contact"/>
       </div>
