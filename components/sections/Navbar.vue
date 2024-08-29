@@ -30,8 +30,8 @@ function onToggleMenu(): void {
         </svg>
         <span v-else class="font-light">✖️</span>
       </label>
-      <nav :class="!menuOpen ? 'hidden' : ''" class="w-full md:w-auto text-nowrap p-8 md:block">
-        <ul aria-label="Primary" class="text-2xl md:text-lg flex text-right flex-col md:flex-row gap-2 md:gap-8">
+      <nav :class="!menuOpen ? 'hidden' : ''" class="w-full md:w-auto md:block">
+        <ul aria-label="Primary" class="text-2xl md:text-lg flex justify-between text-right flex-col md:flex-row gap-2 md:gap-4">
           <li>
             <NuxtLink @click="closeMenu" class="text-logo_text hover:text-text_on_primary" to="#hero">Home</NuxtLink>
           </li>
