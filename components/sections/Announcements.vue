@@ -17,10 +17,7 @@ const backgroundImage = computed(() => {
       <h3 class="underline">Markttermine</h3>
       <ul>
         <li>07.12.24 - Weihnachtsmarkt, 93183 Kallmünz</li>
-        <li>02.11.24 - Kreativmarkt, 93192 Wald</li>
       </ul>
-      <h3 class="underline pt-2">VHS Schwandorf</h3>
-      <p>Kurse Dotpainting für Kinder und Erwachsene.<br/>Siehe Herbst-/Winterprogramm 24/25</p>
     </div>
   </div>
 </section>
