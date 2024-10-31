@@ -25,6 +25,7 @@ export default defineNuxtConfig({
                 { property: 'og:image', content: 'https://dotforyou.de/webpage.jpeg' },
                 { property: 'og:type', content: 'website' },
                 { property: 'og:locale', content: 'de_DE' },
+                { 'http-equiv': 'pragma', content: 'no-cache' }
             ],
             link: [
                 { rel: 'icon', type: 'image/png', href: '/icon.png' },
