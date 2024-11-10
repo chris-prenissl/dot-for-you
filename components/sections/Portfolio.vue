@@ -18,13 +18,6 @@ const categories: Array<Category> = [
         "Hand hergestellt wird."
   },
   {
-    title: "Plotten",
-    coverImgUrl: '/category_images/plotten_cover.png',
-    description: "Plotten kommt aus dem Englischen “to plot” was “zeichnen” oder “darstellen” bedeutet. Es werden mit " +
-        "Hilfe von Vektorgrafiken ausgewählte Motive auf unterschiedlichen Materialien übertragen. So verleihe ich " +
-        "meinen Artikeln ihr individuelles und personalisiertes Design."
-  },
-  {
     title: 'Kerzen',
     coverImgUrl: '/category_images/kerzen_cover.png',
     description: "Zu vielen Anlässen passend verziere ich Kerzen mit schönen Motiven. Mein Sortiment umfasst Stab- und " +
