@@ -6,8 +6,7 @@
       <p class="text-sm md:text-lg md:max-w-screen-l p-2 text-justify text-text_on_primary border-dotted">
         Mein Name ist Melanie Zimmer und ich wohne zusammen mit meinem Mann und unseren
         drei Katzen in Burglengenfeld. Hauptberuflich arbeite ich als allgemeinbildende Lehrerin an einer
-        sonderpädagoischen Berufsschule. Meinen Ausgleich finde ich in meinem kreativen Hobby, welches sich zu einem
-        „Kleingewerbe“ entwickelt hat. Danke für das bisherige große Interesse an meinen Kunstwerken.
+        sonderpädagoischen Berufsschule. Meinen Ausgleich finde ich in meinem kreativen Hobby.
       </p>
     </div>
   </section>
