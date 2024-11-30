@@ -17,7 +17,6 @@ const backgroundImage = computed(() => {
       <h3 class="underline">Markttermine</h3>
       <ul>
         <li>07.12.24 - Weihnachtsmarkt, 93183 Kallmünz</li>
-        <li>14.12.24 und 15.12.24 - Weihnachtsmarkt, 93142 Maxhütte-Haidhof</li>
       </ul>
     </div>
   </div>
