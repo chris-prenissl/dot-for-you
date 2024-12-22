@@ -13,11 +13,7 @@ const backgroundImage = computed(() => {
   <div class="announcement-box m-auto text-xs text-center content-center bg-center bg-contain bg-no-repeat"
        :style="backgroundImage">
     <div class="m-auto p-10 -rotate-3">
-      <h2 class="pb-2 text-lg">Ankündigungen</h2>
-      <h3 class="underline">Markttermine</h3>
-      <ul>
-        <li>07.12.24 - Weihnachtsmarkt, 93183 Kallmünz</li>
-      </ul>
+      <h2 class="pb-2 text-lg">Frühjahrsmärkte derzeit in Planung</h2>
     </div>
   </div>
 </section>
