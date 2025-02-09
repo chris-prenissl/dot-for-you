@@ -28,3 +28,5 @@ scripts/*
 
 # IDE
 .vscode/*
+
+/public/gallery_images/*
