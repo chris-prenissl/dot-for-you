@@ -16,7 +16,7 @@ const announcements: Announcement[] = [
     <div class="space-y-4">
       <div v-for="announcement in announcements" :key="announcement.date + announcement.title" class="p-4 bg-light_white rounded-lg shadow-sm">
         <h3 class="text-xl font-medium">{{ announcement.title }}</h3>
-        <p class="text-sm">{{ announcement.date }}</p>
+        <time datetime="{{ announcement.date }}" class="text-sm">{{ announcement.date }}</time>
         <p class="text-text_default">{{ announcement.location }}</p>
       </div>
     </div>
