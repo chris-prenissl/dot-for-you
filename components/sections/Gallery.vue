@@ -10,7 +10,7 @@ function shuffleArray<T>(array: T[]) {
 }
 
 const images: Array<GalleryImage> = [];
-for (let i = 1; i <= 27; i++) {
+for (let i = 1; i <= 18; i++) {
   images.push({
     title: "Galeriebild " + i,
     url: "/gallery_images/gallery_img - " + i + ".png"
