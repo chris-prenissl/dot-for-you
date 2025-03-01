@@ -1,5 +1,6 @@
 export type Announcement = {
     title: string,
-    date: string,
+    dateText: string,
     location: string,
+    expiredDate: string
 }
