@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { Announcement } from "~/model/Announcement";
+import type {Announcement} from "~/model/Announcement";
 
-function isDateExpired(dateDeString: string): boolean {
-  let date = new Date(dateDeString + " GMT+01:00");
+function isDateExpired(formattedDate: string): boolean {
+  let date = new Date(formattedDate);
   let now = new Date();
-  return now.getMilliseconds() > date.getMilliseconds();
+  return now > date;
 }
 
 const announcements: Announcement[] = [
@@ -21,14 +21,11 @@ const announcements: Announcement[] = [
     <div class="max-w-2xl mx-auto p-6 m-9 bg-primary shadow-lg rounded-2xl">
       <h2 class="text-2xl font-semibold text-center text-text_on_primary pb-4">🔔 Markttermine</h2>
       <div class="space-y-4">
-        <div v-for="announcement in announcements"
-          :key="announcement.dateText + announcement.title + announcement.expiredDate"
-          class="p-4 bg-light_white rounded-lg shadow-sm">
-            <div v-if="!isDateExpired(announcement.expiredDate)">
+        <div v-for="announcement in announcements.filter((value) => !isDateExpired(value.expiredDate))"
+          :key="announcement.dateText + announcement.title + announcement.expiredDate" class="p-4 bg-light_white rounded-lg shadow-sm">
               <h3 class="text-xl font-medium">{{ announcement.title }}</h3>
               <time datetime="{{ announcement.date }}" class="text-sm">{{ announcement.dateText }}</time>
               <p class="text-text_default">{{ announcement.location }}</p>
-            </div>
         </div>
       </div>
     </div>
