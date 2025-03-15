@@ -3,6 +3,7 @@
     <div class="flex justify-center space-x-4">
       <a target="_blank" href="/impressum" class="hover:underline">Impressum</a>
       <a target="_blank" href="/datenschutz" class="hover:underline">Datenschutz</a>
+      <a target="_blank" href="/sicherheitshinweise" class="hover:underline">Sicherheitshinweise</a>
     </div>
 
     <div class="text-center mt-2 text-sm">
@@ -10,3 +11,5 @@
     </div>
   </footer>
 </template>
+<script setup lang="ts">
+</script>
