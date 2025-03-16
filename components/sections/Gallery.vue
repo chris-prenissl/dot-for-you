@@ -35,7 +35,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section id="gallery" class="min-h-svh flex flex-col justify-center items-center z-8">
+  <section id="gallery" class="min-h-svh mt-4 flex flex-col justify-center items-center z-8">
     <h1 class="section-header">Galerie</h1>
     <Swiper class="w-full m-auto drop-shadow-lg"
             :modules="[SwiperAutoplay, SwiperNavigation, SwiperPagination]"
