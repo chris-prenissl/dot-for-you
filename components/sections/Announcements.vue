@@ -17,9 +17,8 @@ function compareExpiredAnnouncement(a: Announcement, b: Announcement): number {
 }
 
 const announcements: Announcement[] = [
-  { title: 'Osterausstellung', dateText: '06.04.2025 - 10 bis 17 Uhr', location: 'Jahnhalle, Regenstauf', startDate: "2025-04-06" },
   { title: 'Frühlingsmarkt Kallmünz', dateText: '03.05.2025', location: 'Kallmünz', startDate: "2025-05-03" },
-  { title: 'Sarchinger Frühlingsfest', dateText: '12.04.2025 - 13 bis 17 Uhr', location: 'Außenbereich Haus der Vereine, Sarching', startDate: "2025-03-31" },
+  { title: 'Sarchinger Frühlingsfest', dateText: '12.04.2025 - 13 bis 17 Uhr', location: 'Außenbereich Haus der Vereine, Sarching', startDate: "2025-04-12" },
 ];
 </script>
 
