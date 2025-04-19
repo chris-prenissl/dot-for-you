@@ -11,17 +11,20 @@ import 'swiper/css/autoplay';
 function shuffleArray<T>(array: T[]) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+    [array[i], array[j]] = [array[j], array[i]];
   }
 }
 
-const images: Array<GalleryImage> = [];
-for (let i = 1; i <= 21; i++) {
-  images.push({
-    title: "Galeriebild " + i,
-    url: "/gallery_images/gallery_img - " + i + ".png"
-  });
-}
+const galleryImages = import.meta.glob('/public/gallery_images/gallery_img*.png', {
+  eager: true,
+  import: 'default'
+});
+
+const images: Array<GalleryImage> = Object.keys(galleryImages).map((path, index) => ({
+  title: `Galeriebild ${index + 1}`,
+  url: path.replace('/public', '')
+}));
+
 shuffleArray(images);
 
 const containerRef = ref(null);
@@ -40,7 +43,7 @@ useSwiper(containerRef, {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    768: {
+    1024: {
       slidesPerView: 3,
       spaceBetween: 20
     }
@@ -70,10 +73,8 @@ onUnmounted(() => {
       <ClientOnly>
         <div class="relative w-full">
           <swiper-container ref="containerRef" :init="false" class="w-full m-auto drop-shadow-lg">
-            <swiper-slide
-                v-for="(image, index) in images"
-                :key="index">
-              <ArtImage class="w-full px-2" :src-path="image.url" :title="image.title" img-sizes="sm:40svw md:100svw"/>
+            <swiper-slide v-for="(image, index) in images" :key="index">
+              <ArtImage class="w-full px-2" :src-path="image.url" :title="image.title" img-sizes="sm:40svw md:100svw" />
             </swiper-slide>
           </swiper-container>
           <div class="swiper-button-prev"></div>
@@ -123,7 +124,7 @@ swiper-container {
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  font-family: swiper-icons,serif;
+  font-family: swiper-icons, serif;
   font-size: var(--swiper-navigation-size);
   text-transform: none !important;
   letter-spacing: 0;
