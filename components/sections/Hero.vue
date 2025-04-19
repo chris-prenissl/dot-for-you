@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
-import ButtonAnchorSecondary from "~/components/elements/ButtonAnchorSecondary.vue";
+import BaseButton from "~/components/elements/BaseButton.vue";
 
 const image = useImage();
 const backgroundImage = computed(() => {
-  const imgUrl = image('/melanie/melanie_bg.png', {format: 'webp', sizes: 'sm:30svw lg:10svw'})
+  const imgUrl = image('/melanie/melanie_bg.png', { format: 'webp', sizes: 'sm:30svw lg:10svw' })
   return { backgroundImage: `url('${imgUrl}')` }
 })
 
@@ -13,7 +12,7 @@ const backgroundImage = computed(() => {
 <template>
   <section id="hero" :style="backgroundImage" class="content-center bg-cover bg-center z-10">
     <div id="hero-element" class="max-w-screen-md p-4 mt-32 md:m-auto md:p-10 rounded-sm">
-      <h1 class="text-2xl md:text-4xl font-bold text-light_white pb-4">Mit Liebe.<br/>handgemacht.</h1>
+      <h1 class="text-2xl md:text-4xl font-bold text-light_white pb-4">Mit Liebe.<br />handgemacht.</h1>
       <p class="md:text-2xl text-light_white mb-8">
         Willkommen bei DotForYou - bei mir findest du kreative und handgemachte Schätze zu vielen Anlässen.
         Aus einer Vielzahl an Materialien gestalte ich individuelle Dekorationen, Geschenke und Mitbringsel.
@@ -21,8 +20,8 @@ const backgroundImage = computed(() => {
         Wünschen.
       </p>
       <div class="flex flex-col md:flex-row flex-wrap gap-2">
-        <ButtonAnchorPrimary title="Zum WhatsApp Shop" path="https://wa.me/c/491637917232"/>
-        <ButtonAnchorSecondary title="Kontakt" path="#contact"/>
+        <BaseButton title="Zum WhatsApp Shop" path="https://wa.me/c/491637917232" variant="primary" />
+        <BaseButton title="Kontakt" path="#contact" variant="secondary" />
       </div>
     </div>
   </section>
