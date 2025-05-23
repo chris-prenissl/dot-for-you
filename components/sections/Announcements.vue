@@ -16,10 +16,7 @@ function compareExpiredAnnouncement(a: Announcement, b: Announcement): number {
   return aDate.getTime() - bDate.getTime();
 }
 
-const announcements: Announcement[] = [
-  { title: 'Frühlingsmarkt Kallmünz', dateText: '03.05.2025', location: 'Kallmünz', startDate: "2025-05-03" },
-  { title: 'Sarchinger Frühlingsfest', dateText: '12.04.2025 - 13 bis 17 Uhr', location: 'Außenbereich Haus der Vereine, Sarching', startDate: "2025-04-12" },
-];
+const announcements: Announcement[] = [];
 </script>
 
 <template>
