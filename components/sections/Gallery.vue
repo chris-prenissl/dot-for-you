@@ -10,7 +10,7 @@ const GALLERY_IMAGES_QUERY = groq`*[
 
 const { data: galleryImages } = await useSanityQuery<SanityDocument>(GALLERY_IMAGES_QUERY);
 const { projectId, dataset } = useSanity().client.config();
-const urlFor = (source: SanityImageSource) =>
+const imgUrlFor = (source: SanityImageSource) =>
     projectId && dataset ? imageUrlBuilder({ projectId, dataset }).image(source) : null;
 
 let windowWidth = ref(0);
@@ -46,7 +46,7 @@ onUnmounted(() => {
       <SwiperSlide
           v-for="galleryImage in galleryImages"
           :key="galleryImage._id">
-        <ArtImage v-if="galleryImage.image" class="w-full px-2" :src-path="urlFor(galleryImage.image).url()" :title="galleryImage.title" img-sizes="sm:40svw md:100svw"/>
+        <ArtImage v-if="galleryImage.image" class="w-full px-2" :src-path="imgUrlFor(galleryImage.image).url()" :title="galleryImage.title" img-sizes="sm:40svw md:100svw"/>
       </SwiperSlide>
     </Swiper>
   </section>

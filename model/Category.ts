@@ -1,5 +1,7 @@
 export type Category = {
     title: string,
-    coverImgUrl: string,
-    description: string
+    image: string,
+    description: string,
+    order: number,
+    slug: string,
 }
