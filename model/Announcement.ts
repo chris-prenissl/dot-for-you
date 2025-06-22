@@ -1,6 +1,7 @@
 export type Announcement = {
     title: string,
-    dateText: string,
+    slug: string,
+    description: string,
+    date: Date,
     location: string,
-    startDate: string
 }
