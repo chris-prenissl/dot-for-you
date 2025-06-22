@@ -1,6 +1,12 @@
 export default defineNuxtConfig({
-    modules: ['nuxt-swiper', 'nuxt-aos', '@nuxtjs/tailwindcss', "@nuxt/image"],
+    compatibilityDate: '2024-08-10',
+    devtools: { enabled : true },
+    modules: ['nuxt-swiper', 'nuxt-aos', '@nuxtjs/tailwindcss', "@nuxt/image", '@nuxtjs/sanity'],
     css: ["~/assets/css/main.css"],
+    sanity: {
+        projectId: process.env.SANITY_STUDIO_PROJECT_ID,
+        dataset: "production",
+    },
     image: {},
     postcss: {
         plugins: {
@@ -11,7 +17,6 @@ export default defineNuxtConfig({
     tailwindcss: {
         viewer: true
     },
-    compatibilityDate: '2024-08-10',
     app: {
         head: {
             title: 'DotForYou - Handmade Kunst für Deko und Geschenke',

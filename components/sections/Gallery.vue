@@ -1,22 +1,17 @@
 <script setup lang="ts">
 import ArtImage from "~/components/elements/ArtImage.vue";
-import type {GalleryImage} from "~/model/GalleryImage";
+import type { SanityDocument } from "@sanity/client";
+import imageUrlBuilder from "@sanity/image-url";
+import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
-function shuffleArray<T>(array: T[]) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]]; // Swap elements
-  }
-}
+const GALLERY_IMAGES_QUERY = groq`*[
+  _type == "galleryImage" && defined(slug.current)
+]|order(publishedAt)`;
 
-const images: Array<GalleryImage> = [];
-for (let i = 1; i <= 22; i++) {
-  images.push({
-    title: "Galeriebild " + i,
-    url: "/gallery_images/gallery_img - " + i + ".png"
-  });
-}
-shuffleArray(images);
+const { data: galleryImages } = await useSanityQuery<SanityDocument>(GALLERY_IMAGES_QUERY);
+const { projectId, dataset } = useSanity().client.config();
+const urlFor = (source: SanityImageSource) =>
+    projectId && dataset ? imageUrlBuilder({ projectId, dataset }).image(source) : null;
 
 let windowWidth = ref(0);
 function onResize() {
@@ -49,9 +44,9 @@ onUnmounted(() => {
           }"
     >
       <SwiperSlide
-          v-for="(image, index) in images"
-          :key="index">
-        <ArtImage class="w-full px-2" :src-path="image.url" :title="image.title" img-sizes="sm:40svw md:100svw"/>
+          v-for="galleryImage in galleryImages"
+          :key="galleryImage._id">
+        <ArtImage v-if="galleryImage.image" class="w-full px-2" :src-path="urlFor(galleryImage.image).url()" :title="galleryImage.title" img-sizes="sm:40svw md:100svw"/>
       </SwiperSlide>
     </Swiper>
   </section>
@@ -71,6 +66,10 @@ onUnmounted(() => {
   color: grey;
 }
 
+.swiper-button-next {
+  color: grey;
+}
+
 .swiper-button-prev::after {
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -85,10 +84,6 @@ onUnmounted(() => {
 
 .max-h-1080px {
   max-height: 1080px !important;
-}
-
-.swiper-button-next {
-  color: grey;
 }
 
 .gallery-radial-gradiant {
