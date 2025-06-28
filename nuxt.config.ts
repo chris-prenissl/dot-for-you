@@ -29,8 +29,7 @@ export default defineNuxtConfig({
                 { property: 'og:description', content: 'Kreative und handgemachte Schätze zu vielen Anlässen' },
                 { property: 'og:image', content: 'https://dotforyou.de/webpage.jpeg' },
                 { property: 'og:type', content: 'website' },
-                { property: 'og:locale', content: 'de_DE' },
-                { 'http-equiv': 'pragma', content: 'no-cache' }
+                { property: 'og:locale', content: 'de_DE' }
             ],
             link: [
                 { rel: 'icon', type: 'image/png', href: '/icon.png' },
