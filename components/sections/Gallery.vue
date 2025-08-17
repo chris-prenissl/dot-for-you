@@ -6,7 +6,7 @@ import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
 const GALLERY_IMAGES_QUERY = groq`*[
   _type == "galleryImage" && defined(slug.current)
-]|order(publishedAt)`;
+]|order(publishedAt desc)`;
 
 const { data: galleryImages } = await useSanityQuery<SanityDocument>(GALLERY_IMAGES_QUERY);
 const { projectId, dataset } = useSanity().client.config();
