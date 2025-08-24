@@ -12,7 +12,7 @@ const {data: announcements} = await useSanityQuery<SanityDocument>(ANNOUNCEMENTS
 
 <template>
   <section id="announcements" class="mt-4 z-9">
-    <h1 class="section-header">Marktermine</h1>
+    <h1 class="section-header">Markttermine</h1>
     <div class="max-w-2xl mx-auto p-6 m-9 bg-primary shadow-lg rounded-2xl">
       <div class="space-y-4">
         <div v-for="announcement in announcements"
