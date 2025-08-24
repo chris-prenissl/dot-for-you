@@ -36,16 +36,19 @@ function onToggleMenu(): void {
             <NuxtLink @click="closeMenu" class="text-logo_text hover:text-text_on_primary" to="#hero">Home</NuxtLink>
           </li>
           <li>
-            <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#announcements">Ankündigungen</NuxtLink>
+            <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#shop">Mein Shop</NuxtLink>
           </li>
           <li>
-            <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#gallery">Galerie</NuxtLink>
+            <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#announcements">Markttermine</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#gallery">Impressionen</NuxtLink>
           </li>
           <li>
             <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#portfolio">Portfolio</NuxtLink>
           </li>
           <li>
-            <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#about">About Me</NuxtLink>
+            <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#about">Über mich</NuxtLink>
           </li>
           <li>
             <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#contact">Kontakt</NuxtLink>

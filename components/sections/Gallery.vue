@@ -60,7 +60,7 @@ onUnmounted(() => {
 
 <template>
     <section id="gallery" class="min-h-svh mt-4 flex flex-col justify-center items-center z-8">
-      <h1 class="section-header">Galerie</h1>
+      <h1 class="section-header">Impressionen</h1>
       <ClientOnly>
         <swiper-container ref="containerRef" class="w-full m-auto drop-shadow-lg" :init="false">
           <swiper-slide

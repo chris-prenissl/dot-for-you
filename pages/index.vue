@@ -8,6 +8,7 @@ import Portfolio from "~/components/sections/Portfolio.vue";
 import CookieDialog from "~/components/elements/CookieDialog.vue";
 import Gallery from "~/components/sections/Gallery.vue";
 import Announcements from "~/components/sections/Announcements.vue";
+import Shop from "~/components/sections/Shop.vue";
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import Announcements from "~/components/sections/Announcements.vue";
     <Navbar/>
     <main class="min-w-60">
       <Hero/>
+      <Shop/>
       <Announcements/>
       <Gallery/>
       <Portfolio/>

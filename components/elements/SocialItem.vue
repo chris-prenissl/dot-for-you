@@ -7,9 +7,9 @@ defineProps<{
 
 <template>
   <a :href="href" target="_blank"
-     class="flex flex-row justify-center items-center gap-4">
+     class="w-full md:w-auto flex flex-row justify-center items-center gap-2">
     <slot/>
-    <p class="text-text_on_primary text-nowrap">{{ text }}</p>
+    <p class="flex-1 min-w-0 text-text_on_primary break-all whitespace-normal">{{ text }}</p>
   </a>
 </template>
 

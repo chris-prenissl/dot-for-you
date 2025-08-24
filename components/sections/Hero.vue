@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
 import ButtonAnchorSecondary from "~/components/elements/ButtonAnchorSecondary.vue";
 
 const image = useImage();
@@ -21,7 +20,6 @@ const backgroundImage = computed(() => {
         Wünschen.
       </p>
       <div class="flex flex-col md:flex-row flex-wrap gap-2">
-        <ButtonAnchorPrimary title="Zum WhatsApp Shop" path="https://wa.me/c/491637917232"/>
         <ButtonAnchorSecondary title="Kontakt" path="#contact"/>
       </div>
     </div>
