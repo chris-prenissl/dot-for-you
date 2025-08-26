@@ -2,7 +2,7 @@
   <section id="contact" class="m-auto flex flex-col bg-primary text-light_text z-5">
     <h1 class="section-header text-text_on_primary">Kontakt</h1>
     <div class="m-auto flex flex-col justify-evenly py-2 md:py-8">
-      <div class="flex flex-col items-start flex-wrap md:flex-row md:items-center px-16 py-2 md:py-16 gap-1 md:gap-6 md:justify-center">
+      <div class="flex flex-col items-start flex-wrap md:flex-row md:items-center m-auto px-16 py-2 md:py-16 gap-1 md:gap-6 md:justify-center">
         <SocialItem href="https://wa.me/c/491637917232" text="WhatsApp Katalog">
           <WhatsAppBusiness/>
         </SocialItem>
