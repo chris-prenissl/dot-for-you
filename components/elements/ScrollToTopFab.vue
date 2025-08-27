@@ -50,9 +50,9 @@ onBeforeUnmount(() => {
     v-show="isVisible"
     @click="onClick"
     aria-label="Scroll to top"
-    class="fixed z-50 bottom-6 right-6 md:bottom-8 md:right-8 h-12 w-12 md:h-14 md:w-14 flex items-center justify-center rounded-full bg-logo_text text-light_white shadow-lg hover:shadow-xl hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-logo_text/30 transition"
+    class="fixed z-50 bottom-6 right-6 md:bottom-8 md:right-8 h-14 w-14 md:h-16 md:w-16 flex items-center justify-center rounded-full bg-logo_text text-light_white shadow-lg hover:shadow-xl hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-logo_text/30 transition"
   >
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="h-6 w-6 md:h-7 md:w-7">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="h-7 w-7 md:h-8 md:w-8">
       <path fill-rule="evenodd" d="M11.47 4.97a.75.75 0 0 1 1.06 0l6.25 6.25a.75.75 0 1 1-1.06 1.06L12.75 7.31V19a.75.75 0 0 1-1.5 0V7.31l-4.97 4.97a.75.75 0 1 1-1.06-1.06l6.25-6.25Z" clip-rule="evenodd" />
     </svg>
   </button>
