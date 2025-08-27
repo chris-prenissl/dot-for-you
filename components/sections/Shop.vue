@@ -6,8 +6,8 @@
       <div class="content-center bg-cover bg-center p-8 border-stone-300 border-2">
         <p>✨ Klein, aber fein<br/>
           <br/>
-          „Der kleine Shop“ befindet sich bei mir zuhause. In meinem Verkaufsregal kannst du eine handverlesene
-          Auswahl an liebevoll handgefertigten Schätzen entdecken. Das Sortiment passt sich den Jahreszeiten an
+          „Der kleine Shop“ befindet sich bei mir zuhause. In meinem Verkaufsregal findest du eine handverlesene
+          Auswahl an liebevoll handgefertigten Schätzen. Das Sortiment passt sich den Jahreszeiten an
           – so kannst du immer Neues entdecken!<br/>Ob für dich selbst oder als Geschenk: Deinen Lieblingsartikel
           verpacke ich dir gerne direkt vor Ort geschenkfertig.<br/>
           <br/>
