@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ButtonAnchorSecondary from "~/components/elements/ButtonAnchorSecondary.vue";
-
 const image = useImage();
 const backgroundImage = computed(() => {
   const imgUrl = image('/melanie/melanie_bg.png', {format: 'webp', sizes: 'sm:30svw lg:10svw'})

@@ -22,7 +22,7 @@ function onToggleMenu(): void {
       <input @input="onToggleMenu" id="navbar-open" class="peer hidden" type="checkbox"/>
       <label class="p-2 mt-2 cursor-pointer md:hidden" for="navbar-open">
         <span class="sr-only">Toggle Navigation</span>
-        <svg v-if="!menuOpen" xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em"
+        <svg v-if="!menuOpen" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
              preserveAspectRatio="xMidYMid meet"
              viewBox="0 0 448 512">
           <path fill="currentColor"
