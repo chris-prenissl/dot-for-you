@@ -9,6 +9,7 @@ import CookieDialog from "~/components/elements/CookieDialog.vue";
 import Gallery from "~/components/sections/Gallery.vue";
 import Announcements from "~/components/sections/Announcements.vue";
 import Shop from "~/components/sections/Shop.vue";
+import ScrollToTopFab from "~/components/elements/ScrollToTopFab.vue";
 </script>
 
 <template>
@@ -24,6 +25,7 @@ import Shop from "~/components/sections/Shop.vue";
       <Contact/>
     </main>
     <Footer/>
+    <ScrollToTopFab/>
     <CookieDialog/>
   </div>
 </template>
