@@ -20,7 +20,10 @@ const backgroundImage = computed(() => {
         Wünschen.
       </p>
       <div class="flex flex-col md:flex-row flex-wrap gap-2">
-        <ButtonAnchorSecondary title="Kontakt" path="#contact"/>
+        <NuxtLink to="#contact"
+           class="p-4 bg-light_white border-pink-400 border rounded-sm text-center text-l hover:text-logo_text hover:drop-shadow-lg">
+          Kontakt
+        </NuxtLink>
       </div>
     </div>
   </section>
