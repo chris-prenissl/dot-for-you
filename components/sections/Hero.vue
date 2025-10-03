@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
+
 const image = useImage();
 const backgroundImage = computed(() => {
   const imgUrl = image('/melanie/melanie_bg.png', {format: 'webp', sizes: 'sm:30svw lg:10svw'})
@@ -17,11 +19,12 @@ const backgroundImage = computed(() => {
         Mein Sortiment beinhaltet einzelne Artikel, Komplettsets sowie personalisierte Designs nach deinen
         Wünschen.
       </p>
-      <div class="flex flex-col md:flex-row flex-wrap gap-2">
+      <div class="flex flex-col md:flex-row flex-wrap gap-4">
         <NuxtLink to="#contact"
            class="p-4 bg-light_white border-pink-400 border rounded-sm text-center text-l hover:text-logo_text hover:drop-shadow-lg">
           Kontakt
         </NuxtLink>
+        <ButtonAnchorPrimary title="Shop Katalog" path="https://wa.me/c/491637917232"/>
       </div>
     </div>
   </section>
