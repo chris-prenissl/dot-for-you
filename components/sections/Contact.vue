@@ -27,17 +27,6 @@
           <Location/>
         </AddressItem>
       </div>
-      <div class="m-auto py-8 text-center">
-        <h2 class="text-xl text-gray-900">
-          Abonniere den
-          <a href="https://whatsapp.com/channel/0029Vb6WYWD0gcfODVVYva24" target="_blank"  class="underline">
-            Whatsappkanal
-          </a>
-        </h2>
-        <p class="mt-2">
-          Erfahre immer von den neuesten Kollektionen und exklusivsten Angeboten.
-        </p>
-      </div>
     </div>
   </section>
 </template>
