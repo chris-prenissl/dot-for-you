@@ -9,10 +9,10 @@
         <SocialItem href="https://wa.me/491637917232" text="WhatsApp Chat">
           <WhatsApp/>
         </SocialItem>
-        <SocialItem href="https://www.instagram.com/dot_for_you_" text="DotForYou">
+        <SocialItem href="https://www.instagram.com/dotforyou_dotpainting" text="DotForYou Painting">
           <Instagram/>
         </SocialItem>
-        <SocialItem href="https://www.instagram.com/derkleineshop_burglengenfeld" text="Der kleine Shop">
+        <SocialItem href="https://www.instagram.com/dotforyou_designs" text="DotForYou Designs">
           <Instagram/>
         </SocialItem>
       </div>
@@ -26,6 +26,17 @@
             text="93133 Burglengenfeld, Augustenstraße 20">
           <Location/>
         </AddressItem>
+      </div>
+      <div class="m-auto py-8 text-center">
+        <h2 class="text-xl text-gray-900">
+          Abonniere den
+          <a href="https://whatsapp.com/channel/0029VbBoRJS0QeakqLmof22Q" target="_blank"  class="underline">
+            Whatsappkanal
+          </a>
+        </h2>
+        <p class="mt-2">
+          Erfahre immer von den neuesten Kollektionen und exklusivsten Angeboten.
+        </p>
       </div>
     </div>
   </section>

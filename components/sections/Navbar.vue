@@ -36,9 +36,6 @@ function onToggleMenu(): void {
             <NuxtLink @click="closeMenu" class="text-logo_text hover:text-text_on_primary" to="#hero">Home</NuxtLink>
           </li>
           <li>
-            <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#shop">Mein Shop</NuxtLink>
-          </li>
-          <li>
             <NuxtLink @click="closeMenu" class="hover:text-logo_text" to="#announcements">Markttermine</NuxtLink>
           </li>
           <li>
