@@ -9,8 +9,6 @@
           einer sonderpädagogischen Berufsschule.
           Vor einigen Jahren habe ich meine Leidenschaft für handgefertigte Dekoration entdeckt.
           Was ursprünglich als kreatives Hobby begann, hat sich mittlerweile zu meiner Marke „dot for you“ entwickelt.<br/>
-          Meine Produkte biete ich in meinem eigenen Verkaufsregal „der kleine Shop“ in Burglengenfeld sowie im Klosterladen in Schwandorf an.
-          Zudem bin ich auf verschiedenen Märkten vertreten. Die Termine findest du unter „Markttermine“.<br/>
           Viel Spaß beim Stöbern!
           Eure Melanie
         </p>
