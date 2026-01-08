@@ -5,7 +5,7 @@
 
       <div class="mt-6">
         <p class="text-lg">Melanie Zimmer<br/>
-          DotForYou - Dotpainting und Homeaccessoires<br/>
+          DotForYou - Dotpainting und Designs<br/>
           Augustenstraße 20<br/>
           93133 Burglengenfeld</p>
 
