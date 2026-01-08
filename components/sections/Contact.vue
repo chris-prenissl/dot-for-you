@@ -9,7 +9,7 @@
         <SocialItem href="https://wa.me/491637917232" text="WhatsApp Chat">
           <WhatsApp/>
         </SocialItem>
-        <SocialItem href="https://www.instagram.com/dotforyou_dotpainting" text="DotForYou Painting">
+        <SocialItem href="https://www.instagram.com/dotforyou_dotpainting" text="DotForYou Dotpainting">
           <Instagram/>
         </SocialItem>
         <SocialItem href="https://www.instagram.com/dotforyou_designs" text="DotForYou Designs">
