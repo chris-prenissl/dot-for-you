@@ -1,3 +1,5 @@
+<script setup lang="ts">
+</script>
 <template>
   <div class="flex justify-center mt-6">
     <div class="bg-white rounded shadow p-6 w-full max-w-xl text-left">
@@ -38,6 +40,18 @@
           Um Schimmelbildung zu vermeiden sollen die Trockenblumen nicht in feuchter oder nasser Umgebung lagern. Sie
           sind nicht zum Verzehr geeignet. Trockenblumen können ggf. allergische Reaktionen hervorrufen. Entsorgung
           kann über den Biomüll oder den Hausmüll erfolgen.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-12">Makramee-Artikel</h2>
+        <p class="text-lg">
+          Diese Makramee-Objekte bestehen aus Baumwoll- und/oder Nylonschnur und können Draht-, Holz- und/oder
+          Metallringe enthalten. Bitte beachten Sie, dass es sich hierbei um kein Spielzeug handelt. Die Artikel sind
+          nicht für Kinder unter 3 Jahren geeignet, da lange Schnüre eine Verwicklungs- oder Strangulationsgefahr
+          darstellen und Kleinteile verschluckt werden können. Halten Sie die Objekte von offenen Flammen und Hitze
+          fern, da Baumwolle brennbar ist und Nylon schmelzen kann. Achten Sie auf eine stets sichere Befestigung.
+          Drahtteile können scharfe Kanten bilden, was bei unsachgemäßer Handhabung zu Verletzungen führen kann. Da
+          Holz ein Naturprodukt ist und sich Metall verfärben kann, sind Materialveränderungen möglich. Die Artikel
+          sind zudem nicht für den Außenbereich geeignet.
         </p>
 
         <h2 class="text-2xl font-semibold mt-12">Reliefgießmasse</h2>
