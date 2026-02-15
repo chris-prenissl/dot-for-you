@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  section {
+    position: relative;
+    min-height: calc(100svh - 6rem);
+    margin-top: -6rem;
+    padding-top: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @media (min-width: 768px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+  }
+
+  .section-header {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+
+  .z-9 {
+    z-index: 9;
+  }
+
+  .z-8 {
+    z-index: 8;
+  }
+
+  .z-7 {
+    z-index: 7;
+  }
+
+  .z-6 {
+    z-index: 6;
+  }
+
+  .z-5 {
+    z-index: 5;
+  }
+
+  .z-4 {
+    z-index: 4;
+  }
+
+  .m-inline {
+    margin-inline: auto;
+  }
+
+  .h-1\/12 {
+    height: 10vh;
+  }
+
+  .h-vh {
+    height: 100vh;
+  }
+
+  .min-h-50svh {
+    min-height: 50svh;
+  }
+
+  .max-h-60svh {
+    max-height: 60svh;
+  }
+
+  .max-w-60swh {
+    max-width: 60svw;
+  }
+
+  .h-40svh {
+    height: 40svh;
+  }
+
+  .h-50svh {
+    height: 50svh;
+  }
+
+  .sm\:h-50svh {
+    @media (min-width: 768px) {
+      height: 50svh;
+    }
+  }
+
+  .w-40svw {
+    width: 40svw;
+  }
+
+  .sm\:w-40svw {
+    @media (min-width: 768px) {
+      width: 40svw;
+    }
+  }
+
+  .md\:w-40svh {
+    @media (min-width: 768px) {
+      width: 40svw;
+    }
+  }
+
+  .max-h-3\/4svh {
+    max-height: 75svh;
+  }
+}

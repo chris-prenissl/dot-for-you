@@ -17,16 +17,9 @@ logs
 .DS_Store
 .fleet
 .idea
+.vscode
 
 # Local env files
 .env
 .env.*
 !.env.example
-
-# Scripts
-scripts/*
-
-# IDE
-.vscode/*
-
-/public/gallery_images/*
