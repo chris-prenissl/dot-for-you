@@ -117,10 +117,10 @@
 					Augustenstr. 20<br>
 					93133 Burglengenfeld<br>
 					Telefon: 0163 / 7917232<br>
-					Website: <a
-						href="https://dotforyou.de"
+					Website: <NuxtLink
+						to="https://dotforyou.de"
 						class="text-blue-500"
-					>dotforyou.de</a>
+					>dotforyou.de</NuxtLink>
 				</p>
 			</div>
 		</div>

@@ -42,9 +42,9 @@
 					Danksagung
 				</h2>
 				<p>
-					Thanks to svgrepo.com for the social media icons (<a
-						href="https://www.svgrepo.com/page/licensing/#CC%20Attribution"
-					>License</a>).
+					Thanks to svgrepo.com for the social media icons (<NuxtLink
+						to="https://www.svgrepo.com/page/licensing/#CC%20Attribution"
+					>License</NuxtLink>).
 				</p>
 			</div>
 		</div>
