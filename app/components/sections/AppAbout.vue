@@ -7,7 +7,7 @@
 			<NuxtImg
 				data-aos="fade-right"
 				class="w-full sm:w-2/5 md:max-w-screen-sm border-8 content-center object-cover shadow-2xl"
-				src="/img/melanie/melanie.jpg"
+				src="/img/melanie/melanie.png"
 				format="webp"
 				sizes="sm:100svw lg:100svw"
 				loading="lazy"
