@@ -20,6 +20,8 @@ export default defineNuxtConfig({
 	},
 	sanity: {
 		projectId: process.env.SANITY_STUDIO_PROJECT_ID,
+		dataset: "production",
+		apiVersion: "2024-03-01",
 	},
 	tailwindcss: {
 		editorSupport: true,
