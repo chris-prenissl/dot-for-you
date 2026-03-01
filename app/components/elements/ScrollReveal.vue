@@ -4,11 +4,13 @@ import { ref, onMounted, onUnmounted } from "vue";
 interface Props {
 	transitionName?: "slide-up" | "slide-down" | "slide-left" | "slide-right" | "fade";
 	threshold?: number;
+	rootMargin?: string;
 }
 
 const props = withDefaults(defineProps<Props>(), {
 	transitionName: "slide-up",
-	threshold: 0.1,
+	threshold: 0.2,
+	rootMargin: "0px 0px -50px 0px",
 });
 
 const isVisible = ref(false);
@@ -31,6 +33,7 @@ onMounted(() => {
 		}
 	}, {
 		threshold: props.threshold,
+		rootMargin: props.rootMargin,
 	});
 
 	if (revealRef.value && observer.value) {
@@ -50,59 +53,49 @@ onUnmounted(() => {
 		ref="revealRef"
 		class="w-full"
 	>
-		<Transition :name="transitionName">
-			<div v-show="isVisible">
-				<slot />
-			</div>
-		</Transition>
+		<div
+			:class="[
+				'reveal-container',
+				isVisible ? 'is-visible' : 'is-hidden',
+				transitionName,
+			]"
+		>
+			<slot />
+		</div>
 	</div>
 </template>
 
-<style>
-.slide-up-enter-active,
-.slide-down-enter-active,
-.slide-left-enter-active,
-.slide-right-enter-active {
+<style scoped>
+.reveal-container {
   transition: all 1s ease-out;
 }
 
-.slide-up-enter-from {
+.is-hidden {
   opacity: 0;
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translate(0, 0) !important;
+}
+
+.slide-up.is-hidden {
   transform: translateY(5rem);
 }
 
-.slide-down-enter-from {
-  opacity: 0;
+.slide-down.is-hidden {
   transform: translateY(-5rem);
 }
 
-.slide-left-enter-from {
-  opacity: 0;
-  transform: translateX(5rem);
+.slide-left.is-hidden {
+  transform: translateY(0) translateX(5rem);
 }
 
-.slide-right-enter-from {
-  opacity: 0;
-  transform: translateX(-5rem);
+.slide-right.is-hidden {
+  transform: translateY(0) translateX(-5rem);
 }
 
-.slide-up-enter-to,
-.slide-down-enter-to,
-.slide-left-enter-to,
-.slide-right-enter-to {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-.fade-enter-active {
-  transition: opacity 1s ease-out;
-}
-
-.fade-enter-from {
-  opacity: 0;
-}
-
-.fade-enter-to {
-  opacity: 1;
+.fade.is-hidden {
+  transform: none;
 }
 </style>
