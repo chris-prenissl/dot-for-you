@@ -2,6 +2,7 @@
 import type { SanityDocument } from "@sanity/client";
 import { createImageUrlBuilder, type SanityImageSource } from "@sanity/image-url";
 import ArtImage from "~/components/elements/ArtImage.vue";
+import ScrollReveal from "~/components/elements/ScrollReveal.vue";
 
 const GALLERY_IMAGES_QUERY = groq`*[
   _type == "galleryImage" && defined(slug.current)
@@ -14,6 +15,7 @@ const imgUrlFor = (source: SanityImageSource) => imageBuilder.image(source);
 
 const windowWidth = ref(0);
 const containerRef = ref(null);
+
 useSwiper(containerRef, {
 	autoplay: true,
 	navigation: {
@@ -61,10 +63,10 @@ onUnmounted(() => {
 		id="gallery"
 		class="min-h-svh mt-4 flex flex-col justify-center items-center z-8"
 	>
-		<h1 class="section-header">
-			Impressionen
-		</h1>
-		<ClientOnly>
+		<ScrollReveal>
+			<h1 class="section-header">
+				Impressionen
+			</h1>
 			<swiper-container
 				ref="containerRef"
 				class="w-full m-auto drop-shadow-lg"
@@ -83,6 +85,6 @@ onUnmounted(() => {
 					/>
 				</swiper-slide>
 			</swiper-container>
-		</ClientOnly>
+		</ScrollReveal>
 	</section>
 </template>
