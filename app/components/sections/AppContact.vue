@@ -55,7 +55,7 @@ import EMailIcon from "~/components/icons/EMailIcon.vue";
 				</AddressItem>
 				<AddressItem
 					to="mailto:dotforyou@gmx.de"
-					text="dotforyou@gmx.net"
+					text="dotforyou@gmx.de"
 				>
 					<EMailIcon />
 				</AddressItem>
