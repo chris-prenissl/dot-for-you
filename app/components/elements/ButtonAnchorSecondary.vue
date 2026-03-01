@@ -8,7 +8,7 @@ defineProps({
 <template>
 	<NuxtLink
 		:to="to"
-		class="p-4 bg-light_white border-pink-400 border rounded-sm text-center text-l hover:text-logo_text hover:drop-shadow-lg"
+		class="p-4 bg-light_white border-logo_text border rounded-sm text-center text-l hover:text-logo_text hover:drop-shadow-lg"
 	>
 		{{ title }}
 	</NuxtLink>

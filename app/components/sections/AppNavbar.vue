@@ -121,6 +121,6 @@ function onToggleMenu(): void {
 
 <style scoped>
 .nav-radial-gradiant {
-  background: radial-gradient(circle, #f9f9f9 70%, #f7d3df);
+  background: radial-gradient(circle, var(--color-light_white) 70%, var(--color-primary));
 }
 </style>

@@ -31,7 +31,7 @@ const { data: portfolioCategories } = await useSanityQuery<SanityDocument>(PORTF
 
 <style scoped>
 .creator-linear-gradient {
-  background: radial-gradient(circle, #F6E6EEFF 0%, #f9f9f9);
+  background: radial-gradient(circle, var(--color-light_white) 0%, var(--color-primary));
 }
 
 .portfolio-min-h {

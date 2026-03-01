@@ -38,6 +38,6 @@
 .about-linear-gradient {
   background-size: cover !important;
   backdrop-filter: blur(10px);
-  background: linear-gradient(to top, rgba(247, 211, 223, 1), rgba(249, 249, 249, 1));
+  background: linear-gradient(to top, var(--color-primary), var(--color-light_white));
 }
 </style>

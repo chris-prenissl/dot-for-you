@@ -4,11 +4,11 @@ export default <Partial<Config>>{
 	theme: {
 		extend: {
 			colors: {
-				light_white: "#f9f9f9",
-				primary: "#f7d3df",
-				logo_text: "#edb9c0",
-				text_default: "#575656",
-				text_on_primary: "#333333",
+				light_white: "var(--color-light_white)",
+				primary: "var(--color-primary)",
+				logo_text: "var(--color-logo_text)",
+				text_default: "var(--color-text_default)",
+				text_on_primary: "var(--color-text_on_primary)",
 			},
 			fontFamily: {
 				sans: ["Noto Sans", "sans-serif"],

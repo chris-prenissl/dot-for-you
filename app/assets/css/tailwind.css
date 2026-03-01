@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-primary: #f3e5ab;
+    --color-light_white: #faf9f6;
+    --color-logo_text: #d2b48c;
+    --color-text_default: #5d5c5c;
+    --color-text_on_primary: #4a4a4a;
+  }
+}
+
 @font-face {
   font-family: "Playfair Display";
   src: url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
