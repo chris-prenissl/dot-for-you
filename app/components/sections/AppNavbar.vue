@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import AppLogo from "~/components/icons/AppLogo.vue";
+
 const menuOpen = ref(false);
 
 function closeMenu() {

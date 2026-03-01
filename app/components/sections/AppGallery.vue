@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { SanityDocument } from "@sanity/client";
 import { createImageUrlBuilder, type SanityImageSource } from "@sanity/image-url";
-import ArtImage from "~/components/ArtImage.vue";
+import ArtImage from "~/components/elements/ArtImage.vue";
 
 const GALLERY_IMAGES_QUERY = groq`*[
   _type == "galleryImage" && defined(slug.current)

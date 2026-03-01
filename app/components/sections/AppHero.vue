@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import ButtonAnchorPrimary from "~/components/ButtonAnchorPrimary.vue";
+import ButtonAnchorPrimary from "~/components/elements/ButtonAnchorPrimary.vue";
+import ButtonAnchorSecondary from "~/components/elements/ButtonAnchorSecondary.vue";
 
 const image = useImage();
 const backgroundImage = computed(() => {
-	const imgUrl = image("/img/melanie/melanie_bg.png", { format: "webp", sizes: "sm:30svw lg:10svw" });
+	const imgUrl = image("/img/melanie/melanie_bg.png", { format: "webp" });
 	return { backgroundImage: `url('${imgUrl}')` };
 });
 </script>
@@ -28,15 +29,13 @@ const backgroundImage = computed(() => {
 				Wünschen.
 			</p>
 			<div class="flex flex-col md:flex-row flex-wrap gap-4">
-				<NuxtLink
+				<ButtonAnchorSecondary
+					title="Kontakt"
 					to="#contact"
-					class="p-4 bg-light_white border-pink-400 border rounded-sm text-center text-l hover:text-logo_text hover:drop-shadow-lg"
-				>
-					Kontakt
-				</NuxtLink>
+				/>
 				<ButtonAnchorPrimary
 					title="Shop Katalog"
-					path="https://wa.me/c/491637917232"
+					to="https://wa.me/c/491637917232"
 				/>
 			</div>
 		</div>
