@@ -29,7 +29,7 @@ const { data: announcements } = await useSanityQuery<SanityDocument>(ANNOUNCEMEN
 						{{ announcement.title }}
 					</h3>
 					<time
-						datetime="{{ announcement.date }}"
+						:datetime="announcement.date"
 						class="text-sm"
 					>{{ new Date(announcement.date).toLocaleDateString() + ' - ' + announcement.location }}</time>
 					<p
@@ -39,7 +39,7 @@ const { data: announcements } = await useSanityQuery<SanityDocument>(ANNOUNCEMEN
 						{{ announcement.description }}
 					</p>
 				</div>
-				<div v-if="!announcements">
+				<div v-if="!announcements || announcements.length === 0">
 					<h3 class="text-xl text-center font-medium">
 						Aktuell keine Termine
 					</h3>
