@@ -47,4 +47,4 @@ _TypeScript_ | _Nuxt_ | _Tailwind_ | _Swiper_
 
 ## License
 
-This project is licensed under a custom License with restriction for commercial use - see the [LICENSE](LICENSE) file for details.
+This project is licensed under a custom License with restriction for commercial use - see the [LICENSE](../dot-for-you%20Kopie/LICENSE) file for details.
