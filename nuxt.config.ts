@@ -7,6 +7,11 @@ export default defineNuxtConfig({
 		"@nuxtjs/sanity",
 	],
 	devtools: { enabled: true },
+	app: {
+		head: {
+			link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+		},
+	},
 	compatibilityDate: "2025-07-15",
 	eslint: {
 		config: {
